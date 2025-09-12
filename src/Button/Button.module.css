@@ -1,7 +1,7 @@
 .btn {
-  display: flex;
-  border: 1px solid black;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 2px;
+  justify-content: center; */
+  padding: 6px;
+  font-size: 24px;
 }

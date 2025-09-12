@@ -1,2 +1,15 @@
 .question {
 }
+
+.question_wrapper {
+  background-color: #98fb98;
+  padding: 8px 12px;
+  display: flex;
+
+  border-radius: 12px 12px 0 12px;
+  margin-bottom: 16px;
+  margin-left: 44px;
+
+  max-width: 260px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
