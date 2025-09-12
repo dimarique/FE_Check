@@ -23,7 +23,7 @@ function App() {
         text={data[index].answer}
       />
       <Button
-        buttonText={"next"}
+        buttonText={"❤️"}
         setIsVisible={setIsVisible}
         onClick={handleButtonClick}
       />

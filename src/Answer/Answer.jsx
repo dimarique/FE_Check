@@ -4,11 +4,15 @@ import { useState } from "react";
 
 const Answer = ({ text, isVisible, setIsVisible }) => {
   return (
-    <div className={styles.answer_wrapper}>
-      <p className={`${styles.answer_text} ${isVisible ? "" : styles.hidden}`}>
-        {text}
-      </p>
-      <Button buttonText={"show"} onClick={() => setIsVisible(true)} />
+    <div>
+      <div className={styles.answer_wrapper}>
+        <Button buttonText={"👀"} onClick={() => setIsVisible(true)} />
+        <p
+          className={`${styles.answer_text} ${isVisible ? "" : styles.hidden}`}
+        >
+          {text}
+        </p>
+      </div>
     </div>
   );
 };

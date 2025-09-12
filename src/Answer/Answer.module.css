@@ -4,17 +4,27 @@
 .answer_wrapper {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  gap: 1rem;
+
+  flex-direction: column-reverse;
+
+  align-items: flex-start;
 }
 
 .answer_text {
-  font-size: 20px;
-  background-color: none;
+  background-color: #ffffff;
   margin: 0;
+
+  padding: 8px 12px;
+  display: flex;
+
+  border-radius: 12px 12px 12px 0;
+  margin-right: 44px;
+
+  max-width: 260px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.09);
 }
 
 .hidden {
   color: transparent;
-  background-color: yellow;
+  background-color: #ffffff;
 }
