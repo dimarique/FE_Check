@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "question": "Что выведет код: console.log('First'); setTimeout(() => console.log('Second'), 100); console.log('Third');",
+    "answer": "Сначала выведется 'First', затем 'Third', а потом 'Second'.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "question": "Что такое setTimeout в JavaScript?",
+    "answer": "Функция, которая откладывает выполнение переданного колбэка на определённое время.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "Что делает функция fetch?",
+    "answer": "Выполняет HTTP-запрос и возвращает промис с объектом Response.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "question": "Какие методы есть у объекта Response?",
+    "answer": ".text(), .json(), .blob(), .arrayBuffer(), .formData()",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "question": "Что такое методы HTTP GET и POST?",
+    "answer": "GET — получение данных, POST — отправка данных.",
+    "category": "HTTP",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "question": "Что означают коды 200, 404, 500?",
+    "answer": "200 — успех, 404 — не найдено, 500 — ошибка сервера.",
+    "category": "HTTP",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "question": "Как передать параметры в fetch при POST?",
+    "answer": "Через объект options: { method: 'POST', body: JSON.stringify(data), headers: {...} }.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "question": "Почему JavaScript однопоточный?",
+    "answer": "У него только один Call Stack, выполняется одна задача в момент времени.",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "question": "Что такое Event Loop?",
+    "answer": "Механизм, который управляет выполнением кода, колбэков и промисов.",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "question": "Что такое Call Stack?",
+    "answer": "Стек вызовов, где выполняется синхронный код.",
+    "category": "Event Loop",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "question": "Что такое Callback Queue?",
+    "answer": "Очередь, в которую попадают колбэки, например от setTimeout.",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "question": "Что такое Microtask Queue?",
+    "answer": "Очередь микрозадач: then(), catch(), finally.",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "question": "Что выполняется раньше — промисы или setTimeout?",
+    "answer": "Сначала промисы (microtasks), потом setTimeout (macrotasks).",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "question": "Что делает ключевое слово async?",
+    "answer": "Функция всегда возвращает промис.",
+    "category": "Async/Await",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "question": "Что делает await?",
+    "answer": "Приостанавливает выполнение функции до завершения промиса.",
+    "category": "Async/Await",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "question": "Можно ли использовать await вне async-функции?",
+    "answer": "Нет.",
+    "category": "Async/Await",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "question": "Что произойдет, если в async-функции выбросить ошибку?",
+    "answer": "Функция вернёт отклонённый промис.",
+    "category": "Async/Await",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "question": "Как обрабатывать ошибки в async/await?",
+    "answer": "Через try/catch.",
+    "category": "Async/Await",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "question": "Чем async/await удобнее чем then?",
+    "answer": "Код читается как синхронный.",
+    "category": "Async/Await",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "question": "Зачем Promise.all?",
+    "answer": "Для параллельного выполнения промисов.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "question": "Как работает Promise.all?",
+    "answer": "Ждёт выполнения всех промисов или падает при ошибке одного.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "question": "Что возвращает Promise.all?",
+    "answer": "Промис с массивом результатов.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "question": "Если p1 за 1с, p2 за 2с, сколько будет ждать Promise.all([p1,p2])?",
+    "answer": "2 секунды.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "question": "Что если один промис в Promise.all завершится с ошибкой?",
+    "answer": "Весь Promise.all отклонится.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "question": "Что делает Promise.race?",
+    "answer": "Возвращает результат самого быстрого промиса.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "question": "Чем отличается Promise.all от Promise.race?",
+    "answer": "all ждёт всех, race — только первого.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "question": "Что если первый промис в race завершится с ошибкой?",
+    "answer": "race завершится с ошибкой.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "question": "Что такое this в JS?",
+    "answer": "Это контекст выполнения функции.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 29,
+    "question": "Что вернёт this в глобальной области в браузере?",
+    "answer": "window.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 30,
+    "question": "Что такое call, apply, bind?",
+    "answer": "Методы для явного задания this.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "question": "В чём отличие call и apply?",
+    "answer": "call принимает аргументы через запятую, apply — массивом.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "question": "Что делает bind?",
+    "answer": "Возвращает новую функцию с привязанным this.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "question": "Как работает this в стрелочных функциях?",
+    "answer": "Берёт контекст из внешней области.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 34,
+    "question": "Что такое инкапсуляция?",
+    "answer": "Сокрытие деталей реализации объекта.",
+    "category": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "question": "Что такое наследование?",
+    "answer": "Механизм, позволяющий одному классу использовать свойства и методы другого.",
+    "category": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "question": "Что такое полиморфизм?",
+    "answer": "Способность методов вести себя по-разному в зависимости от контекста.",
+    "category": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "id": 37,
+    "question": "Что такое класс в JS?",
+    "answer": "Синтаксический сахар над прототипами.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 38,
+    "question": "Что делает ключевое слово constructor?",
+    "answer": "Определяет функцию, которая вызывается при создании экземпляра.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 39,
+    "question": "Как работает extends?",
+    "answer": "Позволяет наследовать один класс от другого.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "question": "Что такое React?",
+    "answer": "Библиотека для построения интерфейсов.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 41,
+    "question": "Что такое компонент в React?",
+    "answer": "Функция или класс, возвращающий JSX.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 42,
+    "question": "Что такое JSX?",
+    "answer": "Расширение синтаксиса JS для описания UI.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 43,
+    "question": "Можно ли использовать React без JSX?",
+    "answer": "Да, но JSX удобнее.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "question": "Что такое props?",
+    "answer": "Данные, передаваемые компоненту.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 45,
+    "question": "Можно ли менять props внутри компонента?",
+    "answer": "Нет.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 46,
+    "question": "Как передать значение в props?",
+    "answer": "Через атрибуты: <Comp name=\"A\"/>.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 47,
+    "question": "Что такое children в React?",
+    "answer": "Содержимое между тегами компонента.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 48,
+    "question": "Что такое state?",
+    "answer": "Внутреннее состояние компонента.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 49,
+    "question": "Как обновить state в функциональном компоненте?",
+    "answer": "С помощью useState.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 50,
+    "question": "Что если напрямую изменить state?",
+    "answer": "UI не обновится.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 51,
+    "question": "Что такое hook?",
+    "answer": "Функция для работы с состоянием и жизненным циклом.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 52,
+    "question": "Для чего нужен useEffect?",
+    "answer": "Для побочных эффектов.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 53,
+    "question": "Когда вызывается useEffect без зависимостей?",
+    "answer": "Один раз после монтирования.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 54,
+    "question": "Когда вызывается useEffect с пустым массивом зависимостей?",
+    "answer": "Тоже один раз после монтирования.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 55,
+    "question": "Когда вызывается useEffect с зависимостями?",
+    "answer": "При изменении зависимостей.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 56,
+    "question": "Что вернёт useState?",
+    "answer": "Массив: значение и функция для обновления.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 57,
+    "question": "Что такое условный рендеринг?",
+    "answer": "Отображение элементов в зависимости от условия.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 58,
+    "question": "Какие способы стилизации компонентов есть?",
+    "answer": "CSS, CSS-модули, inline, styled-components.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 59,
+    "question": "Как передать стили через props?",
+    "answer": "Передать объект style: <Comp style={{color:'red'}}/>.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 60,
+    "question": "Что делает метод `Object.assign`?",
+    "answer": "`Object.assign()` копирует все перечисляемые собственные свойства из одного или нескольких исходных объектов в целевой объект и возвращает его.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 61,
+    "question": "Какой синтаксис у метода `Object.assign`?",
+    "answer": "`Object.assign(target, ...sources)` — где `target` это целевой объект, а `sources` один или несколько исходных объектов.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 62,
+    "question": "В чём разница между `Object.assign(target, source)` и `Object.assign({}, target, source)`?",
+    "answer": "Первый вариант изменяет исходный объект `target`, второй — создаёт новый объект, не затрагивая `target`.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 63,
+    "question": "Для чего используют методы `Object.keys`, `Object.values`, `Object.entries`?",
+    "answer": "`Object.keys(obj)` возвращает массив ключей, `Object.values(obj)` — массив значений, `Object.entries(obj)` — массив пар [ключ, значение].",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 64,
+    "question": "Что вернёт `Object.keys({ a: 1, b: 2 })`?",
+    "answer": "`['a', 'b']`.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 65,
+    "question": "Что вернёт `Object.values({ a: 1, b: 2 })`?",
+    "answer": "`[1, 2]`.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 66,
+    "question": "Что вернёт `Object.entries({ a: 1, b: 2 })`?",
+    "answer": "`[['a', 1], ['b', 2]]`.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 67,
+    "question": "Как можно перебрать все свойства объекта с помощью `Object.entries`?",
+    "answer": "Через цикл `for...of`, например: `for (let [key, value] of Object.entries(obj)) { console.log(key, value); }`.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 68,
+    "question": "Когда полезно использовать `Object.entries` вместо `Object.keys` или `Object.values`?",
+    "answer": "Когда нужно получить доступ как к ключу, так и к значению каждого свойства объекта одновременно.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 69,
+    "question": "Что такое условный рендеринг в React?",
+    "answer": "Это метод в React, который позволяет отображать различные элементы или компоненты в зависимости от выполнения определённого условия.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 70,
+    "question": "Почему в JSX нельзя использовать `if-else` напрямую?",
+    "answer": "Внутри JSX можно использовать только выражения, а `if-else` является управляющей конструкцией.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 71,
+    "question": "Как работает условный рендеринг через `&&`?",
+    "answer": "Если левая часть выражения истинна, JSX отрендерит правую часть. Если ложна — он проигнорирует её.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 72,
+    "question": "В чём отличие условного рендеринга через `&&` и через тернарный оператор?",
+    "answer": "`&&` используется, когда нужно отрисовать элемент только при выполнении условия. Тернарный оператор позволяет выбрать между двумя вариантами рендеринга.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 73,
+    "question": "Зачем разделять компоненты и логику на разные файлы?",
+    "answer": "Это улучшает структуру проекта, делает код более переиспользуемым и читаемым.",
+    "category": "JavaScript/React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 74,
+    "question": "Какие бывают виды экспорта в JavaScript?",
+    "answer": "Экспорт по умолчанию (`export default`) и именованный экспорт (`export { ... }`).",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 75,
+    "question": "Какой синтаксис у импорта по умолчанию?",
+    "answer": "`import MyComponent from './MyComponent.jsx';`",
+    "category": "JavaScript/React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 76,
+    "question": "Какой синтаксис у именованного импорта?",
+    "answer": "`import { MyComponent } from './MyComponent.jsx';`",
+    "category": "JavaScript/React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 77,
+    "question": "В чём отличие импорта по умолчанию от именованного?",
+    "answer": "При импорте по умолчанию можно задать любое имя, а при именованном нужно использовать исходное имя (или псевдоним).",
+    "category": "JavaScript/React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 78,
+    "question": "Как задать псевдоним при именованном импорте?",
+    "answer": "`import { MyComponent as Alias } from './MyComponent.jsx';`",
+    "category": "JavaScript/React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 79,
+    "question": "Какие способы стилизации компонентов в React существуют?",
+    "answer": "1. Обычные CSS-файлы. 2. CSS-модули. 3. Инлайн-стили.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 80,
+    "question": "В чём особенность CSS-модулей?",
+    "answer": "Они помогают избежать конфликтов имён CSS-классов, автоматически создавая уникальные имена.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 81,
+    "question": "Как подключаются CSS-модули в React?",
+    "answer": "`import styles from './Component.module.css';`",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 82,
+    "question": "Как применить класс из CSS-модуля в JSX?",
+    "answer": "`<div className={styles.className}></div>`",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 83,
+    "question": "Какие особенности у инлайн-стилей в JSX?",
+    "answer": "Они передаются как объект в атрибуте `style`, а CSS-свойства записываются в camelCase.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 84,
+    "question": "В каких случаях применяются инлайн-стили?",
+    "answer": "Для динамических стилей или быстрого прототипирования.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 85,
+    "question": "Что такое пропсы в React?",
+    "answer": "Пропсы — это основной механизм для передачи данных от родителя к дочернему компоненту.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 86,
+    "question": "Зачем нужны пропсы?",
+    "answer": "Чтобы делать компоненты переиспользуемыми и динамическими.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 87,
+    "question": "Из каких двух этапов состоит использование пропсов?",
+    "answer": "1. Определение пропсов в компоненте. 2. Передача пропсов при вызове компонента в JSX.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 88,
+    "question": "Что будет, если передать в компонент пропс, который в нём не используется?",
+    "answer": "Компонент его проигнорирует.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 89,
+    "question": "Как React собирает переданные пропсы внутри компонента?",
+    "answer": "Все пропсы собираются в объект, передаваемый как первый аргумент функции-компонента.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "question": "Что такое деструктуризация пропсов?",
+    "answer": "Удобный способ извлечь отдельные свойства из объекта props: `function Component({ prop1, prop2 }) { ... }`.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 91,
+    "question": "Как задать значения пропсов по умолчанию?",
+    "answer": "Через деструктуризацию: `function Comp({ text = 'Default' }) { ... }`.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 92,
+    "question": "Что произойдёт, если передать пропс, у которого есть значение по умолчанию?",
+    "answer": "Будет использовано переданное значение, иначе — значение по умолчанию.",
+    "category": "React",
+    "difficulty": "easy"
+  },
+  {
+    "id": 93,
+    "question": "Как в React рендерить списки?",
+    "answer": "С помощью метода массива `.map()`, преобразуя элементы в JSX.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 94,
+    "question": "Почему при рендеринге списков нельзя использовать стандартные циклы?",
+    "answer": "Внутри JSX можно использовать только выражения, а циклы `for` и `while` — управляющие конструкции.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 95,
+    "question": "Зачем нужен атрибут `key` при рендеринге списков?",
+    "answer": "Он помогает React отслеживать элементы и оптимизировать обновления.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 96,
+    "question": "Как передать в пропсы не-примитивные данные?",
+    "answer": "Оборачивая их в фигурные скобки: `<Comp data={myArray} />`.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 97,
+    "question": "Как происходит обработка событий в React?",
+    "answer": "Обработчики добавляются как атрибуты camelCase (например, onClick) и получают SyntheticEvent.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 98,
+    "question": "Зачем передавать функции в пропсах?",
+    "answer": "Чтобы дочерние компоненты могли вызывать функции родителя и сообщать ему о событиях.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 99,
+    "question": "Что такое `props.children`?",
+    "answer": "Это специальный пропс, содержащий всё, что находится между открывающим и закрывающим тегами компонента.",
+    "category": "React",
+    "difficulty": "medium"
+  },
+  {
+    "id": 100,
+    "question": "Для чего используется `props.children`?",
+    "answer": "Для создания компонентов-обёрток, которые добавляют структуру или стили к вложенному содержимому.",
+    "category": "React",
+    "difficulty": "medium"
+  }
+]
