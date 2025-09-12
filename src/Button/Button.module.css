@@ -1,2 +1,7 @@
-.button {
+.btn {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
 }
