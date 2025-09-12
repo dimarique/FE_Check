@@ -1,0 +1,16 @@
+.answer {
+}
+
+.answer_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.answer_text {
+  font-size: 20px;
+}
+
+.hidden {
+  color: transparent;
+}
