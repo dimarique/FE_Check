@@ -2,6 +2,7 @@
 }
 
 .question_wrapper {
+  position: relative;
   background-color: #98fb98;
   padding: 8px 12px;
   display: flex;
@@ -12,4 +13,13 @@
 
   max-width: 260px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.question_tag {
+  position: absolute;
+  right: 15px;
+  top: -20px;
+  font-size: 12px;
+  background-color: red;
+  padding: 1px 4px;
 }
