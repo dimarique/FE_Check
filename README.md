@@ -1,12 +1,38 @@
-# React + Vite
+# FE Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small quiz app for practicing frontend theory.  
+It contains more than **200 questions and answers** on **JavaScript, React, Redux, Redux Toolkit**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 About
 
-## Expanding the ESLint configuration
+A weekend project made by two frontend course students.  
+Built just for fun and as a way to review theory.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Stack
+
+- React
+- JavaScript (ES6+)
+
+---
+
+## 💡 Features
+
+- Random frontend questions
+- Show answers on click
+
+---
+
+## 🎯 Goal
+
+Non-commercial project. Purely for practice, learning, and fun.
+
+---
+
+## 👥 Authors
+
+- [Dmytro Kuzmenko](https://github.com/dimarique)
+- [Jana Walt](https://github.com/JanaWalt)
