@@ -1,0 +1,9 @@
+.id {
+  font-size: 200px;
+  color: hsla(0, 0%, 20%, 0.1);
+  margin: 0;
+  line-height: 0.7;
+  opacity: 0.1;
+  letter-spacing: -50px;
+  -webkit-text-stroke: 2px black;
+}
