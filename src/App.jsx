@@ -21,7 +21,10 @@ function App() {
   return (
     <>
       <Id text={allData[index].id} />
-      <Question text={allData[index].question} />
+      <Question
+        text={allData[index].question}
+        tag={allData[index].difficulty}
+      />
       <Answer
         setIsVisible={setIsVisible}
         isVisible={isVisible}
