@@ -9,26 +9,24 @@ import Id from "./components/Id/Id";
 
 function App() {
   const allData = [...data1, ...data2];
-  const [index, setIndex] = useState(() =>
-    Math.floor(Math.random() * allData.length),
-  );
+  const randomCard = () => Math.floor(Math.random() * allData.length);
+  const [index, setIndex] = useState(() => randomCard());
   const [isVisible, setIsVisible] = useState(false);
+  const cardNumber = allData[index];
+
   const handleButtonClick = () => {
-    setIndex(Math.floor(Math.random() * allData.length));
+    setIndex(randomCard());
     setIsVisible(false);
   };
 
   return (
     <>
-      <Id text={allData[index].id} />
-      <Question
-        text={allData[index].question}
-        tag={allData[index].difficulty}
-      />
+      <Id text={cardNumber.id} />
+      <Question text={cardNumber.question} tag={cardNumber.difficulty} />
       <Answer
         setIsVisible={setIsVisible}
         isVisible={isVisible}
-        text={allData[index].answer}
+        text={cardNumber.answer}
       />
       <Button
         buttonText={"❤️"}

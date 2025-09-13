@@ -20,6 +20,18 @@
   right: 15px;
   top: -20px;
   font-size: 12px;
-  background-color: red;
   padding: 1px 4px;
+}
+
+.easy {
+  background-color: green;
+}
+
+.hard {
+  background-color: red;
+}
+
+.medium {
+  background-color: yellow;
+  color: black;
 }
