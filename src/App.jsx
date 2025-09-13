@@ -2,10 +2,10 @@ import "./App.css";
 import { useState } from "react";
 import data1 from "./data/fe_questions_15_30.json";
 import data2 from "./data/fe_questions_30_43.json";
-import Question from "./Question/Question";
-import Answer from "./Answer/Answer";
-import Button from "./Button/Button";
-import Id from "./Id/Id";
+import Question from "./components/Question/Question";
+import Answer from "./components/Answer/Answer";
+import Button from "./components/Button/Button";
+import Id from "./components/Id/Id";
 
 function App() {
   const allData = [...data1, ...data2];
@@ -13,7 +13,6 @@ function App() {
     Math.floor(Math.random() * allData.length),
   );
   const [isVisible, setIsVisible] = useState(false);
-  console.log(allData);
   const handleButtonClick = () => {
     setIndex(Math.floor(Math.random() * allData.length));
     setIsVisible(false);
