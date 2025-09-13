@@ -1,0 +1,926 @@
+[
+  {
+    "id": 101,
+    "question": "Что используют в React для рендеринга списков вместо циклов?",
+    "answer": "Метод массива map.",
+    "category": "React: Rendering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 102,
+    "question": "Почему важно указывать атрибут key при рендеринге списков?",
+    "answer": "Для оптимизации производительности и корректного обновления элементов.",
+    "category": "React: Rendering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 103,
+    "question": "Почему не рекомендуется использовать индекс массива как key?",
+    "answer": "Потому что это приводит к ошибкам при изменении списка.",
+    "category": "React: Rendering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 104,
+    "question": "Как передаются объекты и массивы в пропсах?",
+    "answer": "Через фигурные скобки как динамика.",
+    "category": "React: Props",
+    "difficulty": "easy"
+  },
+  {
+    "id": 105,
+    "question": "Что делает специальный проп children?",
+    "answer": "Передает содержимое между открывающим и закрывающим тегом компонента.",
+    "category": "React: Props",
+    "difficulty": "easy"
+  },
+  {
+    "id": 106,
+    "question": "Как в React добавляются обработчики событий?",
+    "answer": "Через атрибуты в JSX с camelCase, например onClick.",
+    "category": "React: Events",
+    "difficulty": "easy"
+  },
+  {
+    "id": 107,
+    "question": "Что такое SyntheticEvent?",
+    "answer": "Кроссбраузерная обертка для событий в React.",
+    "category": "React: Events",
+    "difficulty": "medium"
+  },
+  {
+    "id": 108,
+    "question": "Как избежать перезагрузки страницы при нажатии кнопки внутри формы?",
+    "answer": "Использовать event.preventDefault().",
+    "category": "React: Events",
+    "difficulty": "easy"
+  },
+  {
+    "id": 109,
+    "question": "Зачем передавать функции в пропсах?",
+    "answer": "Чтобы вызывать их внутри дочернего компонента при наступлении события.",
+    "category": "React: Props",
+    "difficulty": "medium"
+  },
+  {
+    "id": 110,
+    "question": "Для чего используют компонент-обертку с children?",
+    "answer": "Чтобы обернуть вложенные элементы в общий контейнер с нужной разметкой или стилями.",
+    "category": "React: Props",
+    "difficulty": "easy"
+  },
+  {
+    "id": 111,
+    "question": "Что такое локальное состояние компонента в React?",
+    "answer": "Это внутренняя память компонента, которая переживает перерисовку и при изменении вызывает новый рендер.",
+    "category": "React: State",
+    "difficulty": "easy"
+  },
+  {
+    "id": 112,
+    "question": "Почему нельзя использовать простую локальную переменную вместо состояния?",
+    "answer": "Потому что переменная не переживет ререндер и её изменение не вызывает перерисовку компонента.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 113,
+    "question": "Что такое хук useState?",
+    "answer": "Это функция из React, которая позволяет создать и управлять локальным состоянием компонента.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 114,
+    "question": "Что возвращает хук useState?",
+    "answer": "Массив из двух элементов: текущее значение состояния и функцию для его изменения.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 115,
+    "question": "Каким значением инициализируется состояние при первом рендеринге?",
+    "answer": "Тем значением, которое передается аргументом в useState.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 116,
+    "question": "Почему нельзя мутировать состояние напрямую?",
+    "answer": "Потому что React не воспримет это как изменение и не запланирует перерисовку.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 117,
+    "question": "Какие правила нужно соблюдать при использовании хуков?",
+    "answer": "Вызывать их только на верхнем уровне компонента и не помещать в условия.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 118,
+    "question": "Что происходит при изменении состояния через функцию setState?",
+    "answer": "React планирует новый рендер компонента.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 119,
+    "question": "Где следует хранить состояние для оптимизации?",
+    "answer": "На том уровне иерархии компонентов, где оно реально нужно.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 120,
+    "question": "Можно ли использовать несколько состояний в одном компоненте?",
+    "answer": "Да, useState можно вызывать несколько раз, и каждое состояние будет независимым.",
+    "category": "React: State",
+    "difficulty": "easy"
+  },
+  {
+    "id": 121,
+    "question": "Что можно хранить в локальном состоянии кроме примитивов?",
+    "answer": "Можно хранить объекты, массивы и другие не-примитивные значения.",
+    "category": "React: State",
+    "difficulty": "easy"
+  },
+  {
+    "id": 122,
+    "question": "Почему нельзя напрямую изменять массив или объект в состоянии?",
+    "answer": "Потому что это мутирует стейт, и React не считает, что нужно перерисовывать компонент.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 123,
+    "question": "Как правильно обновить массив в локальном состоянии?",
+    "answer": "Создать новый массив на основе старого и передать его в setState.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 124,
+    "question": "Что делает колбэк-форма записи setState(oldState => newState)?",
+    "answer": "Позволяет создать новое состояние на основе предыдущего.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 125,
+    "question": "Как обновлять объект в локальном состоянии?",
+    "answer": "Создать новый объект с нужными измененными свойствами и передать его в setState.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 126,
+    "question": "Что такое поднятие состояния?",
+    "answer": "Это перенос состояния в ближайший общий предок компонентов, которым оно нужно, и передача его через пропсы.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 127,
+    "question": "Зачем поднимать состояние только до ближайшего общего предка?",
+    "answer": "Чтобы избежать лишних перерисовок и не пробрасывать данные через ненужные компоненты.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 128,
+    "question": "Как можно разделить данные между несколькими компонентами?",
+    "answer": "Поднять состояние в общий компонент и передавать его через пропсы.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 129,
+    "question": "Что произойдет, если мутировать массив в стейте методом push?",
+    "answer": "React не выполнит перерисовку, так как объект в памяти остался тем же самым.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 130,
+    "question": "Как реализовать добавление нового элемента в список дел?",
+    "answer": "Использовать setState с созданием нового массива, включающего старые элементы и новый.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 131,
+    "question": "Что делает хук useEffect?",
+    "answer": "Синхронизирует компонент с внешней системой и выполняет сайд эффекты.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 132,
+    "question": "Что в React называют сайд эффектами?",
+    "answer": "Действия после рендера, не влияющие напрямую на текущий рендер, например запросы, подписки, изменение DOM, таймеры, работа с localStorage.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 133,
+    "question": "Какие фазы жизненного цикла функционального компонента?",
+    "answer": "Монтирование, обновление, размонтирование.",
+    "category": "React: Lifecycle",
+    "difficulty": "easy"
+  },
+  {
+    "id": 134,
+    "question": "Каков синтаксис useEffect и зачем нужен массив зависимостей?",
+    "answer": "useEffect(callback, deps), массив указывает когда запускать эффект.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 135,
+    "question": "Когда срабатывает эффект без массива зависимостей?",
+    "answer": "После каждого рендера, на монтировании и на всех обновлениях.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 136,
+    "question": "Что означает пустой массив зависимостей?",
+    "answer": "Эффект выполнится один раз на монтировании, а функция очистки при размонтировании.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 137,
+    "question": "Как выполнить действие при размонтировании компонента?",
+    "answer": "Вернуть из эффекта функцию очистки, она выполнится при удалении компонента из DOM.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 138,
+    "question": "Как отследить изменение конкретного пропса или части стейта?",
+    "answer": "Включить их в массив зависимостей, эффект сработает при их изменении.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 139,
+    "question": "Где размещать эффекты и можно ли их несколько?",
+    "answer": "Только на верхнем уровне компонента, эффектов может быть несколько.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 140,
+    "question": "Для каких задач обычно используют useEffect?",
+    "answer": "Запросы к бэку, вебсокеты, слушатели событий, таймеры и интервалы, работа с localStorage.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 141,
+    "question": "Для чего чаще всего используется useEffect при работе с сетью?",
+    "answer": "Для отправки запросов к серверу и синхронизации данных компонента с бэком.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 142,
+    "question": "Почему не стоит отправлять запрос прямо в теле компонента?",
+    "answer": "Потому что запрос будет выполняться при каждом ререндере компонента.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 143,
+    "question": "На какую фазу жизненного цикла обычно вешают сетевые запросы?",
+    "answer": "На фазу монтирования.",
+    "category": "React: Lifecycle",
+    "difficulty": "easy"
+  },
+  {
+    "id": 144,
+    "question": "Зачем добавлять productId в массив зависимостей эффекта?",
+    "answer": "Чтобы эффект срабатывал при изменении идентификатора товара.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 145,
+    "question": "Как отобразить полученные данные из запроса на экране?",
+    "answer": "Сохранить их в локальном стейте и использовать при рендере.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 146,
+    "question": "Что произойдет, если не указать массив зависимостей в useEffect?",
+    "answer": "Эффект будет выполняться после каждого рендера.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 147,
+    "question": "Как обрабатывать ошибки при сетевых запросах?",
+    "answer": "С помощью блока try...catch или обработки ошибок в цепочке then/catch.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 148,
+    "question": "Как можно реализовать индикатор загрузки?",
+    "answer": "Использовать отдельное состояние loading и показывать сообщение вместо данных, пока идет запрос.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 149,
+    "question": "Зачем использовать async/await внутри useEffect?",
+    "answer": "Чтобы писать асинхронный код запросов более читаемо и удобно.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 150,
+    "question": "Как реализовать фильтрацию товаров по категориям?",
+    "answer": "Запросить список категорий, отрендерить их в выпадающем списке и при выборе категории отправлять запрос за товарами этой категории.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 151,
+    "question": "Зачем использовать контекст в React?",
+    "answer": "Чтобы избежать prop drilling и делиться данными между компонентами на разных уровнях.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 152,
+    "question": "Что такое prop drilling?",
+    "answer": "Принудительная передача пропсов через цепочку промежуточных компонентов, которым данные не нужны.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 153,
+    "question": "Как создать контекст?",
+    "answer": "Вызвать createContext(initialValue) и экспортировать полученный объект контекста.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 154,
+    "question": "Зачем нужен Provider у контекста?",
+    "answer": "Он оборачивает часть дерева и передает значение через проп value всем потребителям ниже.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 155,
+    "question": "Как получить значение контекста в компоненте?",
+    "answer": "Вызвать useContext(MyContext) и использовать возвращенное значение.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 156,
+    "question": "Что будет, если не указать value у Provider?",
+    "answer": "Будет использовано значение по умолчанию, заданное в createContext.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 157,
+    "question": "Когда лучше применять контекст, а не поднимать состояние?",
+    "answer": "Когда данные нужны многим компонентам на разных уровнях и пробрасывание пропсов усложняет код.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 158,
+    "question": "Можно ли передавать в контекст объекты и функции?",
+    "answer": "Да, в value можно положить любые значения, включая объекты и колбэки.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 159,
+    "question": "Как связать контекст с локальным состоянием?",
+    "answer": "Хранить состояние в родителе, передавать текущее значение и функции обновления через value.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 160,
+    "question": "Зачем выносить провайдер в отдельный компонент, например ThemeContextProvider?",
+    "answer": "Чтобы инкапсулировать состояние и логику контекста и упростить подключение контекста в приложении.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 161,
+    "question": "Для чего нужен хук useRef?",
+    "answer": "Для доступа к реальным DOM элементам и хранения значений между рендерами без перерисовки.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 162,
+    "question": "К чему можно прикреплять ref?",
+    "answer": "Только к DOM элементам, ссылка доступна в свойстве current.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 163,
+    "question": "Как получить размеры элемента через ref?",
+    "answer": "Использовать btnRef.current.offsetWidth и btnRef.current.offsetHeight.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 164,
+    "question": "Чем ref отличается от состояния useState?",
+    "answer": "ref мутабелен и его изменение не вызывает ререндер, useState триггерит ререндер.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 165,
+    "question": "Как установить фокус на инпут при первом рендере?",
+    "answer": "Создать ref и в эффекте вызвать inputRef.current.focus().",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 166,
+    "question": "Можно ли читать значение инпута через ref без стейта?",
+    "answer": "Да, из inputRef.current.value.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 167,
+    "question": "Зачем использовать react hook form?",
+    "answer": "Чтобы упростить работу с формами и валидацией без лишних ререндеров.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 168,
+    "question": "Что возвращает useForm и для чего register и handleSubmit?",
+    "answer": "register регистрирует поля, handleSubmit обрабатывает сабмит с валидацией.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 169,
+    "question": "Где брать и как рендерить ошибки полей?",
+    "answer": "В formState.errors и показывать сообщения условным рендерингом под инпутами.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 170,
+    "question": "Как задать правила и сообщения валидации в register?",
+    "answer": "Передать объект с required, minLength, maxLength, pattern или validate, указывая message для каждой проверки.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 171,
+    "question": "Что делает библиотека react-router в React приложении?",
+    "answer": "Она позволяет реализовать маршрутизацию и имитировать многостраничность в SPA.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 172,
+    "question": "Зачем оборачивать приложение в BrowserRouter?",
+    "answer": "Чтобы включить поддержку роутинга и предоставить контекст для маршрутов.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 173,
+    "question": "Какие компоненты используют для создания маршрутов?",
+    "answer": "Компоненты Routes и Route.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 174,
+    "question": "Что делает проп path у компонента Route?",
+    "answer": "Указывает, по какому адресу будет отрисован данный компонент.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 175,
+    "question": "Как задать маршрут по умолчанию?",
+    "answer": "Указать path=\"/\" для нужного компонента.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 176,
+    "question": "Как отрисовать компонент при любом маршруте?",
+    "answer": "Вынести его за пределы обертки Routes.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 177,
+    "question": "Что такое вложенные роуты?",
+    "answer": "Это маршруты внутри других маршрутов, которые отображаются в Outlet родителя.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 178,
+    "question": "Для чего используется компонент Outlet?",
+    "answer": "Чтобы указать место в родителе, где будет отображаться вложенный маршрут.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 179,
+    "question": "Чем отличаются Link и NavLink?",
+    "answer": "Link просто делает переход по маршруту, а NavLink умеет отображать активное состояние.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 180,
+    "question": "Почему ссылки в роутере лучше, чем ввод адреса вручную?",
+    "answer": "Они обеспечивают навигацию внутри SPA без перезагрузки страницы.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 181,
+    "question": "Что такое параметризованный роут?",
+    "answer": "Это маршрут, в котором часть пути задается динамически через :paramName, например /details/:id.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 182,
+    "question": "Зачем нужны параметризованные роуты?",
+    "answer": "Чтобы передавать данные через URL, например id товара для отображения его деталей.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 183,
+    "question": "Как получить параметры маршрута в компоненте?",
+    "answer": "Использовать хук useParams, который возвращает объект с параметрами.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 184,
+    "question": "Что вернет useParams при маршруте /products/5 и path=\"/products/:id\"?",
+    "answer": "Объект { id: \"5\" }.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 185,
+    "question": "Как сделать параметр необязательным?",
+    "answer": "Добавить знак вопроса, например :id?.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 186,
+    "question": "Что будет, если параметр необязательный и его нет в URL?",
+    "answer": "Компонент все равно отрендерится, а параметр будет undefined.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 187,
+    "question": "Можно ли использовать несколько параметров в роуте?",
+    "answer": "Да, например /shop/:category/:productId.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 188,
+    "question": "В чем отличие передачи данных через контекст и через параметры URL?",
+    "answer": "Контекст используется внутри React-приложения, а параметры URL удобны для навигации и прямых ссылок.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 189,
+    "question": "Как использовать параметр категории для фильтрации товаров?",
+    "answer": "Извлечь категорию через useParams и подставить в запрос к API.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 190,
+    "question": "Что произойдет при заходе на /products без параметров, если маршрут задан /products/:category??",
+    "answer": "Отрендерится тот же компонент, но параметр категории будет пустым, и можно показать все товары.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 191,
+    "question": "Что хранится в Redux store?",
+    "answer": "Глобальное состояние приложения, структурированное по срезам (reducers).",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 192,
+    "question": "Зачем нужны actions?",
+    "answer": "Чтобы описывать, какое изменение состояния нужно произвести, и передавать данные для этого.",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 193,
+    "question": "Что делает reducer?",
+    "answer": "Это чистая функция, которая принимает текущее состояние и action, и возвращает новое состояние.",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 194,
+    "question": "Как создать store в Redux?",
+    "answer": "Вызвать createStore и передать в него reducer (или combineReducers для нескольких).",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 195,
+    "question": "Для чего нужен Provider из react-redux?",
+    "answer": "Чтобы передать store всему React приложению через контекст.",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 196,
+    "question": "Что делает хук useSelector?",
+    "answer": "Позволяет выбрать нужный кусочек состояния из Redux store и подписаться на его изменения.",
+    "category": "Redux: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 197,
+    "question": "Что делает хук useDispatch?",
+    "answer": "Возвращает функцию для отправки action в store, чтобы инициировать изменение состояния.",
+    "category": "Redux: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 198,
+    "question": "Что такое action creator?",
+    "answer": "Функция, которая создает объект action, чтобы не писать их вручную.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 199,
+    "question": "Почему reducer должен быть чистой функцией?",
+    "answer": "Чтобы гарантировать предсказуемое и детерминированное обновление состояния.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 200,
+    "question": "Что такое однонаправленный поток данных в Redux?",
+    "answer": "Данные всегда движутся в одном направлении: компонент → dispatch action → reducer → новое состояние → обновление компонентов.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 201,
+    "question": "Что делает combineReducers в Redux?",
+    "answer": "Объединяет несколько редьюсеров в один общий для создания store.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 202,
+    "question": "Почему важно не мутировать состояние в редьюсере?",
+    "answer": "Потому что Redux отслеживает изменения только через сравнение ссылок, а мутация приведет к ошибкам и некорректным обновлениям.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 203,
+    "question": "Зачем нужен payload в экшне?",
+    "answer": "Чтобы передавать дополнительные данные (например, текст нового дела).",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 204,
+    "question": "Как связать компонент с Redux store?",
+    "answer": "Через useDispatch для отправки экшнов и useSelector для получения состояния.",
+    "category": "Redux: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 205,
+    "question": "Как хранить в Redux одновременно массив и примитив?",
+    "answer": "Использовать объект с несколькими свойствами (например, todos и count).",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 206,
+    "question": "Зачем делать отдельные файлы для экшнов и редьюсеров?",
+    "answer": "Чтобы код был структурированным, поддерживаемым и масштабируемым.",
+    "category": "Redux: Structure",
+    "difficulty": "medium"
+  },
+  {
+    "id": 207,
+    "question": "Что такое slice в Redux Toolkit?",
+    "answer": "Это срез состояния приложения с редьюсером, экшенами и их генераторами в одном месте.",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 208,
+    "question": "Чем отличается createSlice от чистого Redux?",
+    "answer": "Он автоматически создает редьюсер, экшены и action creators, сокращая шаблонный код.",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 209,
+    "question": "Что делает Immer в Redux Toolkit?",
+    "answer": "Позволяет писать мутацию состояния, а под капотом создается новый иммутабельный объект.",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 210,
+    "question": "Что хранит объект initialState в createSlice?",
+    "answer": "Начальное состояние выбранного среза (slice).",
+    "category": "Redux Toolkit",
+    "difficulty": "easy"
+  },
+  {
+    "id": 211,
+    "question": "Зачем нужно свойство name в createSlice?",
+    "answer": "Оно используется как префикс для типов экшенов.",
+    "category": "Redux Toolkit",
+    "difficulty": "easy"
+  },
+  {
+    "id": 212,
+    "question": "Чем configureStore лучше createStore?",
+    "answer": "Он современный, безопасный и поддерживается официально, а createStore считается устаревшим.",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 213,
+    "question": "Как использовать useSelector в компоненте с Redux Toolkit?",
+    "answer": "const counter = useSelector(state => state.counter) — выбрать нужный фрагмент состояния.",
+    "category": "Redux: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 214,
+    "question": "Как диспатчить экшен increment из Slice?",
+    "answer": "Импортировать increment и вызвать dispatch(increment()).",
+    "category": "Redux: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 215,
+    "question": "Что делает redux-thunk?",
+    "answer": "Позволяет писать асинхронные экшны (экшн возвращает функцию вместо объекта).",
+    "category": "Redux Thunk",
+    "difficulty": "medium"
+  },
+  {
+    "id": 216,
+    "question": "Зачем нужен createAsyncThunk в Redux Toolkit?",
+    "answer": "Он автоматически создает асинхронный экшн и генерирует экшны для состояний pending, fulfilled и rejected.",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 217,
+    "question": "Что делает extraReducers в createSlice?",
+    "answer": "Позволяет обрабатывать экшны, которые не описаны напрямую в reducers (например, из createAsyncThunk).",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 218,
+    "question": "Какие три состояния у асинхронного экшна?",
+    "answer": "pending (в процессе), fulfilled (успешно выполнен), rejected (ошибка).",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 219,
+    "question": "Зачем нужен thunkApi во втором аргументе createAsyncThunk?",
+    "answer": "Чтобы получить доступ к dispatch и getState внутри асинхронного экшна.",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 220,
+    "question": "Как передать параметры в асинхронный экшн?",
+    "answer": "Указать их при вызове dispatch, например dispatch(fetchTodoById(5)).",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 221,
+    "question": "Где хранить статус загрузки и ошибки в слайсе?",
+    "answer": "В state, например свойства status и error.",
+    "category": "Redux Toolkit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 222,
+    "question": "Почему стоит обрабатывать async-логику в thunk, а не в компоненте?",
+    "answer": "Чтобы разгрузить компоненты, централизовать бизнес-логику и упростить повторное использование.",
+    "category": "Redux Thunk",
+    "difficulty": "medium"
+  },
+  {
+    "id": 223,
+    "question": "Что делает useCallback?",
+    "answer": "Кэширует определение функции между рендерами компонента.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 224,
+    "question": "Когда стоит применять useCallback?",
+    "answer": "Когда нужно передавать функцию в дочерний memo-компонент, чтобы избежать лишних ререндеров, или когда функция указана в зависимостях эффекта.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 225,
+    "question": "Что делает React.memo?",
+    "answer": "Обозначает компонент как “чистый”, чтобы он ререндерился только при изменении пропсов.",
+    "category": "React: Performance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 226,
+    "question": "Что делает useMemo?",
+    "answer": "Кэширует результат вычислений между рендерами.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 227,
+    "question": "Чем useMemo отличается от useCallback?",
+    "answer": "useMemo возвращает значение (результат функции), а useCallback возвращает саму функцию.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 228,
+    "question": "Что нужно указывать в массиве зависимостей useMemo и useCallback?",
+    "answer": "Только те значения, при изменении которых функция или результат должны пересчитываться.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 229,
+    "question": "Какая функция считается подходящей для useMemo?",
+    "answer": "Чистая функция без аргументов, зависящая только от переданных зависимостей.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 230,
+    "question": "Когда useMemo пересчитает значение?",
+    "answer": "Только если изменилось что-то из массива зависимостей.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 231,
+    "question": "Какие типичные задачи решает useMemo?",
+    "answer": "Кэширование сложных вычислений или подготовленных данных, которые передаются в дочерние компоненты.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 232,
+    "question": "Что произойдет, если не использовать useCallback или useMemo при передаче вычисляемых значений/функций в дочерние компоненты?",
+    "answer": "Дочерние компоненты будут ререндериться чаще, даже если их пропсы фактически не изменились.",
+    "category": "React: Performance",
+    "difficulty": "medium"
+  }
+]
