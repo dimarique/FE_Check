@@ -7,7 +7,9 @@ import Button from "./Button/Button";
 import Id from "./Id/Id";
 
 function App() {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(() =>
+    Math.floor(Math.random() * data.length),
+  );
   const [isVisible, setIsVisible] = useState(false);
 
   const handleButtonClick = () => {
