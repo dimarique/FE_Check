@@ -1,30 +1,32 @@
 import "./App.css";
 import { useState } from "react";
-import data from "./data/fe_questions_complete.json";
+import data1 from "./data/fe_questions_15_30.json";
+import data2 from "./data/fe_questions_30_43.json";
 import Question from "./Question/Question";
 import Answer from "./Answer/Answer";
 import Button from "./Button/Button";
 import Id from "./Id/Id";
 
 function App() {
+  const allData = [...data1, ...data2];
   const [index, setIndex] = useState(() =>
-    Math.floor(Math.random() * data.length),
+    Math.floor(Math.random() * allData.length),
   );
   const [isVisible, setIsVisible] = useState(false);
-
+  console.log(allData);
   const handleButtonClick = () => {
-    setIndex(Math.floor(Math.random() * data.length));
+    setIndex(Math.floor(Math.random() * allData.length));
     setIsVisible(false);
   };
 
   return (
     <>
-      <Id text={data[index].id} />
-      <Question text={data[index].question} />
+      <Id text={allData[index].id} />
+      <Question text={allData[index].question} />
       <Answer
         setIsVisible={setIsVisible}
         isVisible={isVisible}
-        text={data[index].answer}
+        text={allData[index].answer}
       />
       <Button
         buttonText={"❤️"}
