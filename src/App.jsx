@@ -14,7 +14,6 @@ function App() {
   const [index, setIndex] = useState(() => randomCard());
   const [isVisible, setIsVisible] = useState(false);
   const cardNumber = allData[index];
-
   const handleButtonClick = () => {
     setIndex(randomCard());
     setIsVisible(false);
