@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 233,
     "question": "Что такое \"нормальный поток\" HTML-элементов?",
@@ -253,643 +253,461 @@
   },
   {
     "id": 269,
-    "question": "Что такое JavaScript и зачем он нужен?",
-    "answer": "Это язык программирования для браузеров, который добавляет динамику и интерактив на сайты: обработку кликов, ввод данных, изменение DOM и т.д.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 270,
-    "question": "Почему HTML и CSS не подходят для динамики?",
-    "answer": "HTML — язык разметки (структура). CSS — язык стилей (внешний вид). Они статичны и не могут полноценно реагировать на действия пользователя.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 271,
-    "question": "Где выполняется JavaScript?",
-    "answer": "JS — однопоточный язык, выполняется в браузере (поддержка встроена «из коробки»).",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 272,
-    "question": "Как подключить JS к HTML?",
-    "answer": "Скрипты пишутся в файлах .js и подключаются тегом <script src=\"путь\"></script>. Обычно — перед </body>, чтобы DOM успел загрузиться. ./ — искать в текущей папке, ../ — подняться на уровень выше.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 273,
-    "question": "Что такое переменная?",
-    "answer": "Именованное хранилище данных в памяти, доступное по имени.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 274,
-    "question": "Чем отличаются let, const и var?",
-    "answer": "let — переменная, можно менять значение. const — константа, нельзя переприсвоить. var — устаревший способ объявления, использовать не рекомендуется.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 275,
-    "question": "Какие типы данных есть в JavaScript?",
-    "answer": "number, string, boolean, object, null, undefined, BigInt, symbol",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 276,
-    "question": "Как работает динамическая типизация в JS?",
-    "answer": "Тип переменной не фиксируется — в одну и ту же переменную можно записывать число, строку, логическое значение и т.д.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 277,
-    "question": "Что такое шаблонные строки?",
-    "answer": "Строки в обратных кавычках (), которые позволяют встраивать выражения через ${}. Например: let name = \"Elena\"; console.log(`Hello, ${name}!`);",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 278,
-    "question": "Какие условные конструкции есть в JS?",
-    "answer": "if, if...else, тернарный оператор: условие ? выражение1 : выражение2",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 279,
-    "question": "Что такое цикл?",
-    "answer": "Конструкция, которая повторяет блок кода, пока выполняется условие.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 280,
-    "question": "Какие виды циклов есть в JS?",
-    "answer": "while (с предусловием), do...while (с постусловием), for (со счетчиком)",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 281,
-    "question": "Для чего нужны break и continue?",
-    "answer": "break — прервать цикл досрочно. continue — пропустить текущую итерацию и перейти к следующей.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 282,
-    "question": "Зачем нужны функции в JavaScript?",
-    "answer": "Функции помогают избежать дублирования кода (DRY), позволяют объединять повторяющуюся логику в одном месте, упрощают поддержку, тестирование и документирование.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 283,
-    "question": "Что такое объявление (declaration) функции?",
-    "answer": "Это способ создания именованного блока кода с ключевым словом function.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 284,
-    "question": "Что такое аргументы (параметры) функции?",
-    "answer": "Это значения, которые передаются функции при вызове для использования внутри её тела.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 285,
-    "question": "Что произойдет, если аргумент функции не передан?",
-    "answer": "По умолчанию его значение будет undefined.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 286,
-    "question": "Что такое возвращаемое значение функции?",
-    "answer": "Это результат, который функция возвращает с помощью ключевого слова return. Если return не указан, функция возвращает undefined.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 287,
-    "question": "Что такое локальные и глобальные переменные?",
-    "answer": "Локальные переменные объявленные внутри функции и доступны только в её теле. Глобальные объявлены вне функций и доступны везде.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 288,
-    "question": "Что такое function expression?",
-    "answer": "Это запись функции через присваивание переменной. Пример: const myFunction = function() { ... }; Функцию можно использовать только после объявления.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 289,
-    "question": "В чем отличие function declaration и function expression?",
-    "answer": "Function declaration можно вызвать до объявления, function expression — только после. В основном это влияет на порядок использования функций в коде.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 290,
-    "question": "Что такое колбэк (callback) функция?",
-    "answer": "Функция, которая передается в другую функцию как аргумент и вызывается внутри нее в нужный момент.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 291,
-    "question": "Как правильно передавать колбеки в функцию?",
-    "answer": "Передавать только имя функции без круглых скобок.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 292,
-    "question": "Что такое стрелочные (arrow) функции?",
-    "answer": "Сокращенный синтаксис для записи функций. Пример однострочной: const sum = (a,b) => a + b; пример многострочной: const f = (a,b) => { return a+b; };",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 293,
-    "question": "Какие преимущества использования функций?",
-    "answer": "1) Логика в одном месте. 2) Нет дублирования кода. 3) Проще поддерживать, тестировать и документировать. 4) Возможность передавать функции как значения (колбэки).",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 294,
-    "question": "Что такое объект в JavaScript?",
-    "answer": "Это набор пар «ключ-значение». Ключи уникальны внутри объекта, а значения могут быть любыми — примитивами, объектами, массивами, функциями.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 295,
-    "question": "Как создать объект через литерал объекта?",
-    "answer": "const human = {}; // пустой объект. Можно сразу указать свойства: const human = {name: 'Vasya', age: 25};",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 296,
-    "question": "Как добавлять свойства в объект?",
-    "answer": "Через точку: human.name = 'Vasya'; или через квадратные скобки: human['name'] = 'Vasya';",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 297,
-    "question": "Что такое квадратные скобки для доступа к свойствам объекта?",
-    "answer": "Позволяют использовать вычисляемое имя свойства, которое может быть известно только во время выполнения. Пример: hero[propToUpgrade] = 'Супер ' + hero[propToUpgrade];",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 298,
-    "question": "Что будет, если обратиться к несуществующему свойству объекта?",
-    "answer": "Ошибки не будет. Результатом будет undefined.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 299,
-    "question": "Как проверить наличие свойства в объекте?",
-    "answer": "Через оператор in: if ('name' in obj) { ... }. Или через условие: if(obj.name) { ... } — работает за счет truthy/falsy значений.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 300,
-    "question": "Что такое массив в JavaScript?",
-    "answer": "Упорядоченная коллекция элементов. Элементы имеют индексы, начинающиеся с нуля. Массив можно создать: const arr = []; или const arr = ['a','b','c'];",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 301,
-    "question": "Как получить доступ к элементу массива?",
-    "answer": "Через индекс: arr[0] — первый элемент, arr[1] — второй элемент и т.д.",
-    "category": "JavaScript",
-    "difficulty": "easy"
-  },
-  {
-    "id": 302,
-    "question": "Что такое свойство length массива?",
-    "answer": "Длина массива. Показывает последнюю занятую позицию + 1. Массив может 'растягиваться', если задать элемент на индекс больше текущей длины.",
-    "category": "JavaScript",
-    "difficulty": "medium"
-  },
-  {
-    "id": 303,
     "question": "Какие методы добавления и удаления элементов из массива есть?",
     "answer": "push — добавить в конец, pop — удалить с конца, unshift — добавить в начало, shift — удалить с начала.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 304,
+    "id": 270,
     "question": "Что делает метод slice у массива?",
     "answer": "Создает новый массив, содержащий срез исходного массива. Пример: arr.slice(2,5) — элементы с позиции 2 по 4 включительно.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 305,
+    "id": 271,
     "question": "Что делает метод splice у массива?",
     "answer": "Позволяет удалять, заменять или вставлять элементы в массив. Синтаксис: splice(start, deleteCount, item1, item2...).",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 306,
+    "id": 272,
     "question": "Что делает метод sort?",
     "answer": "Сортирует массив на месте, изменяя исходный массив. Может принимать колбэк для задания пользовательского порядка сортировки.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 307,
+    "id": 273,
     "question": "Какие аргументы принимает колбэк метода sort?",
     "answer": "Два аргумента: elem1 и elem2 — два элемента массива, которые нужно сравнить для определения их порядка.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 308,
+    "id": 274,
     "question": "Что должен возвращать колбэк метода sort?",
     "answer": "Отрицательное значение, если elem1 должен быть перед elem2, 0 — если порядок не важен, положительное значение, если elem1 должен быть после elem2.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 309,
+    "id": 275,
     "question": "Что делает метод reduce?",
     "answer": "Проходит по массиву и вычисляет агрегированное значение. Возвращает одно значение, которое является результатом всех итераций.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 310,
+    "id": 276,
     "question": "Какие аргументы принимает колбэк метода reduce?",
     "answer": "Первый аргумент — аккумулятор (результат предыдущей итерации), второй аргумент — текущий элемент массива.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 311,
+    "id": 277,
     "question": "Зачем указывать начальное значение аккумулятора в reduce?",
     "answer": "Чтобы избежать ошибок на первой итерации и явно задать стартовое значение для аккумулятора. Рекомендуется всегда указывать начальное значение.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 312,
+    "id": 278,
     "question": "Что произойдет, если колбэк reduce не возвращает значение?",
     "answer": "На следующей итерации в качестве аккумулятора будет `undefined`, что приведет к некорректным результатам.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 313,
+    "id": 279,
     "question": "Чем reduce отличается от forEach?",
     "answer": "forEach перебирает массив и выполняет действия для каждого элемента, но ничего не возвращает. reduce возвращает одно агрегированное значение и использует аккумулятор.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 314,
+    "id": 280,
     "question": "Что делает метод some?",
     "answer": "Проверяет, удовлетворяет ли хотя бы один элемент массива условию, заданному в колбэке. Возвращает true, если условие выполнено хотя бы для одного элемента, иначе false.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 315,
+    "id": 281,
     "question": "Какие аргументы принимает колбэк метода some?",
     "answer": "Первый аргумент — текущий элемент массива, второй — индекс элемента, третий — ссылка на сам массив.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 316,
+    "id": 282,
     "question": "Что делает метод every?",
     "answer": "Проверяет, удовлетворяют ли все элементы массива условию, заданному в колбэке. Возвращает true, если все элементы соответствуют условию, иначе false.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 317,
+    "id": 283,
     "question": "Чем отличаются методы some и every?",
     "answer": "some возвращает true, если условие выполняется хотя бы для одного элемента. every возвращает true только если условие выполняется для всех элементов.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 318,
+    "id": 284,
     "question": "Что делает метод find?",
     "answer": "Ищет первый элемент массива, который удовлетворяет условию в колбэке, и возвращает его. Если таких элементов нет — возвращает undefined.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 319,
+    "id": 285,
     "question": "Что делает метод findIndex?",
     "answer": "Ищет первый элемент массива, который удовлетворяет условию в колбэке, и возвращает его индекс. Если такого элемента нет — возвращает -1.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 320,
+    "id": 286,
     "question": "Какие аргументы принимает колбэк методов some, every, find, findIndex?",
     "answer": "Первый аргумент — элемент массива, второй — индекс элемента, третий — ссылка на весь массив.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 321,
+    "id": 287,
     "question": "Что такое DOM?",
     "answer": "DOM (Document Object Model) — объектная модель документа, где каждый элемент HTML представлен как JS-объект с набором свойств и методов.",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
-    "id": 322,
+    "id": 288,
     "question": "Как найти элемент по id?",
     "answer": "С помощью метода document.getElementById('ID_элемента'). Возвращает первый найденный элемент с указанным id.",
     "category": "DOM",
     "difficulty": "easy"
   },
   {
-    "id": 323,
+    "id": 289,
     "question": "Чем отличается querySelector от querySelectorAll?",
     "answer": "querySelector возвращает первый элемент, соответствующий CSS-селектору. querySelectorAll возвращает NodeList со всеми соответствующими элементами.",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
-    "id": 324,
+    "id": 290,
     "question": "Как изменить текст DOM-элемента?",
     "answer": "Свойство textContent позволяет изменить текст элемента: element.textContent = 'Новый текст'.",
     "category": "DOM",
     "difficulty": "easy"
   },
   {
-    "id": 325,
+    "id": 291,
     "question": "Как изменить стили DOM-элемента через JS?",
     "answer": "Через объект style элемента: element.style.backgroundColor = 'red'; element.style.marginTop = '10px';",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
-    "id": 326,
+    "id": 292,
     "question": "Как добавить или удалить CSS-класс у элемента?",
     "answer": "Используется classList: element.classList.add('className'), element.classList.remove('className'), element.classList.toggle('className').",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
-    "id": 327,
+    "id": 293,
     "question": "Как создать новый DOM-элемент?",
     "answer": "document.createElement('tagName') создает элемент в памяти. Он еще не добавлен в разметку.",
     "category": "DOM",
     "difficulty": "easy"
   },
   {
-    "id": 328,
+    "id": 294,
     "question": "Какие методы позволяют добавить элемент на страницу?",
     "answer": "append, prepend, before, after. Все методы вызываются у родительского элемента, куда нужно добавить новый элемент.",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
-    "id": 329,
+    "id": 295,
     "question": "Как добавить несколько обработчиков события?",
     "answer": "Через addEventListener: element.addEventListener('click', callback); Можно добавлять сколько угодно обработчиков на одно событие.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
-    "id": 330,
+    "id": 296,
     "question": "Что такое объект Event в обработчике события?",
     "answer": "Это объект, передаваемый браузером в обработчик, который содержит информацию о событии, например, event.target — элемент, на котором произошло событие.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
-    "id": 331,
+    "id": 297,
     "question": "Как получить текущее значение input при событии?",
     "answer": "Через event.target.value в обработчике события.",
     "category": "Events",
     "difficulty": "easy"
   },
   {
-    "id": 332,
+    "id": 298,
     "question": "Что такое всплытие событий (bubbling) в JavaScript?",
     "answer": "Когда событие происходит на целевом элементе, оно проходит вверх по DOM-иерархии и срабатывают обработчики на родительских элементах.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
-    "id": 333,
+    "id": 299,
     "question": "Что такое погружение событий (capturing)?",
     "answer": "Фаза жизненного цикла события, когда событие идет сверху вниз по DOM-иерархии до целевого элемента.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
-    "id": 334,
+    "id": 300,
     "question": "Что такое currentTarget и чем оно отличается от target?",
     "answer": "currentTarget — это элемент, на котором в данный момент выполняется обработчик события. target — элемент, на котором произошло событие. Они могут различаться при всплытии.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
-    "id": 335,
+    "id": 301,
+    "question": "Как можно предотвратить всплытие события?",
+    "answer": "С помощью метода event.stopPropagation(), который останавливает дальнейшее распространение события по DOM-иерархии.",
+    "category": "Events",
+    "difficulty": "medium"
+  },
+  {
+    "id": 302,
+    "question": "Что такое делегирование событий?",
+    "answer": "Прием, когда обработка событий потомков делегируется родительскому элементу. Вместо множества обработчиков на отдельных элементах, вешается один на родителя и используется всплытие.",
+    "category": "Events",
+    "difficulty": "medium"
+  },
+  {
+    "id": 303,
+    "question": "Как отфильтровать события по типу целевого элемента при делегировании?",
+    "answer": "В обработчике проверяем свойство event.target.nodeName или другие признаки элемента и выполняем обработку только при совпадении.",
+    "category": "Events",
+    "difficulty": "medium"
+  },
+  {
+    "id": 304,
+    "question": "Почему не стоит бездумно использовать stopPropagation?",
+    "answer": "Потому что можно создать 'мертвую зону', где события не будут достигать родительских элементов, нарушая работу аналитики, SEO и других скриптов.",
+    "category": "Events",
+    "difficulty": "medium"
+  },
+  {
+    "id": 305,
+    "question": "Какие фазы жизненного цикла события существуют?",
+    "answer": "1) Погружение (capturing) — вниз по DOM, 2) Цель (target) — на целевом элементе, 3) Всплытие (bubbling) — вверх по DOM.",
+    "category": "Events",
+    "difficulty": "medium"
+  },
+  {
+    "id": 306,
+    "question": "Что делает spread-оператор в JavaScript?",
+    "answer": "Spread-оператор (...) разворачивает элементы массива или пары ключ-значение объекта, позволяя их использовать как отдельные значения.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 307,
+    "question": "Для чего используется spread-оператор с массивами?",
+    "answer": "Чтобы создавать поверхностные копии массивов или объединять несколько массивов в один.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 308,
+    "question": "Для чего используется spread-оператор с объектами?",
+    "answer": "Для создания поверхностной копии объекта или объединения объектов.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 309,
     "question": "Что такое поверхностная копия объекта или массива?",
     "answer": "Это копия, где верхний уровень создается заново, но вложенные объекты или массивы остаются ссылками на оригинальные.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 336,
+    "id": 310,
     "question": "Можно ли использовать spread-оператор для передачи элементов массива в функцию?",
     "answer": "Да, spread-оператор позволяет передавать элементы массива как отдельные аргументы функции.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 337,
+    "id": 311,
     "question": "Что такое rest-оператор в JavaScript?",
-    "answer": "Rest-оператор ... собирает оставшиеся аргументы функции в массив, позволяя работать с произвольным количеством аргументов.",
+    "answer": "Rest-оператор (...) собирает оставшиеся аргументы функции в массив, позволяя работать с произвольным количеством аргументов.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 338,
+    "id": 312,
     "question": "Где должен располагаться rest-оператор в аргументах функции?",
     "answer": "Rest-оператор должен быть последним аргументом функции, чтобы собрать все остальные аргументы в массив.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 339,
+    "id": 313,
     "question": "Можно ли использовать несколько rest-операторов в определении функции?",
     "answer": "Нет, в определении функции может быть только один rest-оператор, и он должен быть в конце.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 340,
+    "id": 314,
     "question": "Что такое деструктуризация массивов?",
     "answer": "Это синтаксис, позволяющий распаковать элементы массива в отдельные переменные по порядку.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 341,
+    "id": 315,
     "question": "Как использовать rest-оператор при деструктуризации массивов?",
     "answer": "Rest-оператор позволяет собрать оставшиеся элементы массива в отдельный массив после указанных переменных.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 342,
+    "id": 316,
     "question": "Что такое деструктуризация объектов?",
     "answer": "Это синтаксис, позволяющий распаковать значения свойств объекта в отдельные переменные по имени ключей.",
     "category": "JavaScript",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
-    "id": 343,
+    "id": 317,
     "question": "Важен ли порядок свойств при деструктуризации объектов?",
     "answer": "Нет, порядок не имеет значения. Важны только имена свойств.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 344,
+    "id": 318,
     "question": "Как задать значение по умолчанию при деструктуризации объекта?",
-    "answer": "Используется синтаксис свойство = значение, если свойства нет в объекте, переменной присваивается значение по умолчанию.",
+    "answer": "Используется синтаксис 'свойство = значение', если свойства нет в объекте, переменной присваивается значение по умолчанию.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 345,
+    "id": 319,
     "question": "Что такое алиасы (псевдонимы) при деструктуризации объектов?",
-    "answer": "Алиасы позволяют записать значение свойства объекта в переменную с другим именем, используя синтаксис ключ: имя_переменной.",
+    "answer": "Алиасы позволяют записать значение свойства объекта в переменную с другим именем, используя синтаксис 'ключ: имя_Переменной'.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 346,
+    "id": 320,
     "question": "Зачем использовать localStorage на клиенте?",
     "answer": "localStorage позволяет сохранять данные на стороне клиента, чтобы они сохранялись между перезагрузками страницы и даже закрытием браузера, например для хранения темы, языка или корзины.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 347,
+    "id": 321,
     "question": "Чем localStorage отличается от cookies?",
     "answer": "Данные в localStorage не отправляются на сервер при каждом запросе, а хранятся только в браузере; размер хранилища больше (до 5 МБ) и доступ к данным только через JS.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 348,
+    "id": 322,
     "question": "Какие методы предоставляет localStorage для работы с данными?",
     "answer": "Основные методы: setItem(key, value) — добавить или обновить, getItem(key) — получить значение, removeItem(key) — удалить элемент, clear() — очистить всё, key(index) — получить ключ по индексу, length — количество элементов.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 349,
+    "id": 323,
     "question": "Как добавить значение в localStorage?",
     "answer": "Используется метод setItem с ключом и значением: localStorage.setItem('key', 'value').",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 350,
+    "id": 324,
     "question": "Как получить значение из localStorage?",
     "answer": "Используется метод getItem с указанием ключа: localStorage.getItem('key'), возвращает строку или null, если ключа нет.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 351,
+    "id": 325,
     "question": "Как удалить конкретное значение из localStorage?",
     "answer": "Используется метод removeItem с указанием ключа: localStorage.removeItem('key').",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 352,
+    "id": 326,
     "question": "Как полностью очистить localStorage?",
     "answer": "Используется метод clear(): localStorage.clear(), удаляет все данные из хранилища.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 353,
+    "id": 327,
     "question": "Можно ли управлять данными localStorage с сервера?",
     "answer": "Нет, localStorage доступен только на стороне клиента через JavaScript и сервер не может напрямую управлять его содержимым.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 354,
+    "id": 328,
     "question": "Что произойдет, если в localStorage записать не строку?",
     "answer": "Не строковые данные будут неявно преобразованы в строку, что может вызвать нежелательные эффекты.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 355,
+    "id": 329,
     "question": "Почему нельзя просто положить объект в localStorage?",
     "answer": "LocalStorage умеет хранить только строки. Если попытаться положить объект напрямую, JS преобразует его в строку '[object Object]', что необратимо и не дает доступа к исходному объекту.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 356,
+    "id": 330,
     "question": "Что такое JSON и зачем он нужен для localStorage?",
-    "answer": "JSON (JavaScript Object Notation) — это текстовый формат для хранения структурированных данных. Он позволяет преобразовать объекты и массивы в строку, которую можно сохранить в localStorage и потом восстановить обратно.",
+    "answer": "JSON (JavaScript Object Notation) — это текстовый формат для хранения структурированных данных. Он позволяет преобразовать объекты и массивы в строку, которую можно сохранить в localStorage и потом восстановить обратно в объект/массив.",
     "category": "JavaScript",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
-    "id": 357,
+    "id": 331,
     "question": "Как преобразовать объект в строку для хранения в localStorage?",
     "answer": "Используется метод JSON.stringify(jsObject), который сериализует объект или массив в строку формата JSON.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 358,
+    "id": 332,
     "question": "Как восстановить объект из localStorage?",
     "answer": "Сначала получаем строку через getItem, затем используем JSON.parse(string), чтобы десериализовать строку обратно в объект или массив.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
-    "id": 359,
+    "id": 333,
     "question": "Что произойдет, если вызвать JSON.parse после JSON.stringify?",
     "answer": "Мы получим новый объект, который содержит те же данные, что исходный, но никак не связан с оригиналом — это глубокая копия.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
-    "id": 360,
+    "id": 334,
     "question": "Можно ли хранить массивы в localStorage?",
     "answer": "Да, массивы можно сериализовать с помощью JSON.stringify и хранить как строку, а затем десериализовать с помощью JSON.parse.",
     "category": "JavaScript",
