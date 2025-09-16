@@ -2,18 +2,20 @@ import Button from "../Button/Button";
 import styles from "./Answer.module.css";
 import { useState } from "react";
 
-const Answer = ({ text, isVisible, setIsVisible }) => {
+const Answer = ({ text, isVisible, setIsVisible, onClick }) => {
   return (
-    <div>
-      <div className={styles.answer_wrapper}>
-        <Button buttonText={"👀"} onClick={() => setIsVisible(true)} />
-        <p
-          className={`${styles.answer_text} ${isVisible ? "" : styles.hidden}`}
-        >
-          {text}
-        </p>
+    <>
+      <div className={styles.answer}>
+        <div className={styles.answer_wrapper}>
+          <p
+            className={`${styles.answer_text} ${isVisible ? "" : styles.hidden}`}
+          >
+            {text}
+          </p>
+        </div>
       </div>
-    </div>
+      <Button buttonText={"❤️"} setIsVisible={setIsVisible} onClick={onClick} />
+    </>
   );
 };
 
