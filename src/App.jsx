@@ -1,13 +1,13 @@
-import "./App.css";
-import { useState } from "react";
-import data1 from "./data/fe_questions_1_15.json";
-import data2 from "./data/fe_questions_15_30.json";
-import data3 from "./data/fe_questions_30_43.json";
-import Question from "./components/Question/Question";
-import Answer from "./components/Answer/Answer";
+import './App.css';
+import { useState } from 'react';
+import en_data1 from './data/en_questions_001-100.json';
+import en_data2 from './data/en_questions_101-232.json';
+import en_data3 from './data/en_questions_233-360.json';
+import Question from './components/Question/Question';
+import Answer from './components/Answer/Answer';
 
 function App() {
-  const allData = [...data1, ...data2, ...data3];
+  const allData = [...en_data1, ...en_data2, ...en_data3];
 
   const randomCard = () => Math.floor(Math.random() * allData.length);
 
@@ -24,18 +24,8 @@ function App() {
 
   return (
     <>
-      <Question
-        id={cardNumber.id}
-        setIsVisible={setIsVisible}
-        text={cardNumber.question}
-        tag={cardNumber.difficulty}
-      />
-      <Answer
-        setIsVisible={setIsVisible}
-        isVisible={isVisible}
-        text={cardNumber.answer}
-        onClick={handleButtonClick}
-      />
+      <Question id={cardNumber.id} setIsVisible={setIsVisible} text={cardNumber.question} tag={cardNumber.difficulty} />
+      <Answer setIsVisible={setIsVisible} isVisible={isVisible} text={cardNumber.answer} onClick={handleButtonClick} />
     </>
   );
 }
