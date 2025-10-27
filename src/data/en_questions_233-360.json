@@ -1,0 +1,898 @@
+﻿[
+  {
+    "id": 233,
+    "question": "What is the 'normal flow' of HTML elements?",
+    "answer": "It's the standard way elements are laid out. Block elements take up the full width of their container and stack vertically, inline elements line up horizontally and take up only the width of their content.",
+    "category": "HTML & CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 234,
+    "question": "What are the possible values for the 'position' property?",
+    "answer": "static, relative, absolute, fixed, sticky.",
+    "category": "HTML & CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 235,
+    "question": "What's the difference between relative and absolute?",
+    "answer": "relative — the element stays in the flow but can be offset; absolute — the element is removed from the flow and positioned relative to its positioned parent.",
+    "category": "HTML & CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 236,
+    "question": "Relative to what does absolute positioning work?",
+    "answer": "Relative to the nearest parent with a position other than static. If there is none, relative to the body.",
+    "category": "HTML & CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 237,
+    "question": "Where is absolute positioning used?",
+    "answer": "For modals, close buttons, animations (sliders, carousels).",
+    "category": "HTML & CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 238,
+    "question": "What's the difference between fixed and sticky?",
+    "answer": "fixed always stays in place relative to the viewport; sticky behaves like a normal element but 'sticks' when reaching a threshold.",
+    "category": "HTML & CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 239,
+    "question": "What is flexbox and why is it used?",
+    "answer": "Flexbox is a layout model for easily arranging elements horizontally and vertically and creating responsive layouts.",
+    "category": "HTML & CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 240,
+    "question": "What are the main axis and cross axis in flexbox?",
+    "answer": "Main axis — the direction along which items are laid out. Cross axis — perpendicular to it. Defined via flex-direction.",
+    "category": "HTML & CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 241,
+    "question": "What values does the flex-direction property have?",
+    "answer": "row, column, row-reverse, column-reverse.",
+    "category": "HTML & CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 242,
+    "question": "What do justify-content and align-items do?",
+    "answer": "justify-content — alignment along the main axis; align-items — along the cross axis.",
+    "category": "HTML & CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 243,
+    "question": "How does flex-wrap work?",
+    "answer": "Defines item wrapping: nowrap (default) — all in one line; wrap — wrap to a new line/column.",
+    "category": "HTML & CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 244,
+    "question": "How does align-self work?",
+    "answer": "Allows overriding the alignment of a specific item along the cross axis.",
+    "category": "HTML & CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 245,
+    "question": "What is CSS Grid and why is it used?",
+    "answer": "CSS Grid is a layout system for creating grid-based layouts with rows and columns. Useful for complex 2D layouts.",
+    "category": "CSS Grid",
+    "difficulty": "easy"
+  },
+  {
+    "id": 246,
+    "question": "How does CSS Grid differ from Flexbox?",
+    "answer": "Flexbox works on one axis, Grid works on two axes (rows and columns simultaneously).",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 247,
+    "question": "What are grid container and grid item?",
+    "answer": "Grid container — an element with display: grid. Grid items — its direct children.",
+    "category": "CSS Grid",
+    "difficulty": "easy"
+  },
+  {
+    "id": 248,
+    "question": "What is grid-template-columns used for?",
+    "answer": "Defines the number and width of columns in the grid.",
+    "category": "CSS Grid",
+    "difficulty": "easy"
+  },
+  {
+    "id": 249,
+    "question": "What does the 'fr' unit mean?",
+    "answer": "fr — a fraction of the available space. For example, 1fr 2fr — the second column is twice as wide as the first.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 250,
+    "question": "How to write repeating values in a template?",
+    "answer": "Using repeat(). Example: grid-template-columns: repeat(4, 1fr).",
+    "category": "CSS Grid",
+    "difficulty": "easy"
+  },
+  {
+    "id": 251,
+    "question": "How to add gaps between grid cells?",
+    "answer": "Using grid-gap (or row-gap and column-gap).",
+    "category": "CSS Grid",
+    "difficulty": "easy"
+  },
+  {
+    "id": 252,
+    "question": "What is grid-template-rows used for?",
+    "answer": "Defines the number and height of rows in the grid.",
+    "category": "CSS Grid",
+    "difficulty": "easy"
+  },
+  {
+    "id": 253,
+    "question": "What does grid-template-areas do?",
+    "answer": "Allows defining named areas in the grid, and elements can be placed using grid-area.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 254,
+    "question": "How to align grid cell content horizontally and vertically?",
+    "answer": "justify-items — horizontal, align-items — vertical.",
+    "category": "CSS Grid",
+    "difficulty": "easy"
+  },
+  {
+    "id": 255,
+    "question": "What do grid-auto-rows and grid-auto-columns do?",
+    "answer": "Set the size of rows and columns that are not explicitly defined.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 256,
+    "question": "How to control the direction in which the grid adds new items?",
+    "answer": "Using grid-auto-flow: row (by rows) or column (by columns).",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 257,
+    "question": "What are justify-self and align-self used for?",
+    "answer": "justify-self — aligns an element horizontally; align-self — vertically.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 258,
+    "question": "What do grid-row and grid-column do?",
+    "answer": "Set the grid lines that the element spans, e.g., grid-column: 1 / 3.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 259,
+    "question": "What does it mean that 'grid works with grid lines'?",
+    "answer": "grid-column: 1 / 3 means 'from the first line to the third', i.e., 2 columns, not 3.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 260,
+    "question": "What is responsive design?",
+    "answer": "An approach where a website adapts to screen size, working well on smartphones, tablets, laptops, and desktops alike.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 261,
+    "question": "What's the difference between a separate mobile version and responsive design?",
+    "answer": "A separate version is a different site (e.g., m.site.com) for mobile. Responsive design is one site that rearranges layout for different screen sizes.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 262,
+    "question": "What are breakpoints?",
+    "answer": "Screen sizes (width or height) where the layout 'breaks' and switches to different styles (e.g., at 520px — 2 columns, at 900px — 6 columns).",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 263,
+    "question": "What are media queries?",
+    "answer": "CSS rules that apply only under certain conditions, like screen width, height, resolution, or device type.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 264,
+    "question": "What's the difference between em, rem, and px?",
+    "answer": "px — absolute pixels; em — relative to parent font size; rem — relative to root font size.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 265,
+    "question": "What is the difference between relative and absolute units in CSS?",
+    "answer": "Absolute units (px, cm) are fixed; relative units (%, em, rem, vw, vh) adapt to context.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 266,
+    "question": "What are pseudo-classes?",
+    "answer": "Selectors that target elements in a certain state, e.g., :hover, :focus, :nth-child().",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 267,
+    "question": "What are pseudo-elements?",
+    "answer": "Selectors that target part of an element, like ::before, ::after, ::first-letter.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 268,
+    "question": "What's the difference between inline, block, and inline-block?",
+    "answer": "inline — flows horizontally, width/height ignored; block — full width, vertical stack; inline-block — inline but respects width/height.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 269,
+    "question": "What are z-index and stacking context?",
+    "answer": "z-index — element's stack order; stacking context — a group of elements with a defined stacking order.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 270,
+    "question": "What are transitions and animations in CSS?",
+    "answer": "Transitions — smooth change of a property on state change. Animations — keyframe-based, can run automatically or infinitely.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 271,
+    "question": "What is the difference between visibility:hidden and display:none?",
+    "answer": "visibility:hidden — element is invisible but takes space; display:none — element is removed from layout.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 272,
+    "question": "What are floats used for?",
+    "answer": "Originally for wrapping text around elements; now often replaced by flexbox/grid for layout.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 273,
+    "question": "What is the difference between relative, absolute, fixed, and sticky positioning?",
+    "answer": "relative — offset from normal; absolute — relative to nearest positioned parent; fixed — relative to viewport; sticky — behaves relative until threshold, then sticks.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 274,
+    "question": "What are the main features of CSS variables?",
+    "answer": "Custom properties (--name), reuse, dynamic changes via JS, scoped to selectors.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 275,
+    "question": "How to declare and use a CSS variable?",
+    "answer": "Declaring: --main-color: red; Using: color: var(--main-color);",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 276,
+    "question": "What is the difference between relative and absolute units for fonts?",
+    "answer": "px — fixed size; em — relative to parent; rem — relative to root.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 277,
+    "question": "What are CSS functions like calc(), min(), max(), clamp() used for?",
+    "answer": "calc() — arithmetic in CSS; min()/max() — pick min/max value; clamp() — constrain a value between min and max.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 278,
+    "question": "What's the difference between relative, absolute, and fixed positioning again?",
+    "answer": "relative — moves from its normal spot; absolute — removed from flow, positioned relative to parent; fixed — always relative to viewport.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 279,
+    "question": "What are the main differences between inline, inline-block, and block?",
+    "answer": "inline — no width/height, flows horizontally; block — full width, stacked; inline-block — like inline but respects width/height.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 280,
+    "question": "How does box-sizing: border-box help?",
+    "answer": "Includes padding and border in the element's width/height, making layout easier.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 281,
+    "question": "What are the differences between relative, absolute, fixed, sticky again?",
+    "answer": "relative — offsets within flow; absolute — removed, relative to positioned ancestor; fixed — relative to viewport; sticky — scrolls then sticks.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 282,
+    "question": "How does CSS specificity work?",
+    "answer": "Inline styles > IDs > classes/attributes/pseudo-classes > elements/pseudo-elements.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 283,
+    "question": "What are the different ways to include CSS in HTML?",
+    "answer": "Inline (style attribute), internal (style tag), external (link to CSS file).",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 284,
+    "question": "What are the differences between relative, absolute, and fixed again?",
+    "answer": "relative — moves within flow; absolute — removed, relative to ancestor; fixed — viewport; sticky — scrolls then sticks.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 285,
+    "question": "What are pseudo-classes and pseudo-elements again?",
+    "answer": "pseudo-class — element state (:hover, :focus); pseudo-element — part of element (::before, ::after).",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 286,
+    "question": "What is the difference between em and rem?",
+    "answer": "em — relative to parent; rem — relative to root font size.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 287,
+    "question": "What is the difference between inline, block, and inline-block again?",
+    "answer": "inline — horizontal, no width/height; block — full width, vertical; inline-block — inline but respects width/height.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 288,
+    "question": "What are the main flexbox properties again?",
+    "answer": "display: flex; flex-direction; justify-content; align-items; align-self; flex-wrap; gap.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 289,
+    "question": "What are the main grid properties again?",
+    "answer": "display: grid; grid-template-columns/rows; grid-gap; grid-area; justify-items; align-items; grid-auto-flow.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 290,
+    "question": "What is the difference between relative, absolute, fixed, and sticky once more?",
+    "answer": "relative — moves within flow; absolute — removed, relative to ancestor; fixed — viewport; sticky — scrolls then sticks.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 291,
+    "question": "What is the difference between flexbox and grid?",
+    "answer": "Flexbox — 1D (row or column); Grid — 2D (rows + columns).",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 292,
+    "question": "What are breakpoints in responsive design again?",
+    "answer": "Screen sizes where layout changes, e.g., 520px → 2 columns, 900px → 6 columns.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 293,
+    "question": "What is the difference between relative and absolute units in CSS again?",
+    "answer": "Absolute units (px, cm) are fixed; relative units (%, em, rem, vw, vh) adapt to context.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 294,
+    "question": "What are media queries again?",
+    "answer": "CSS rules applied under specific conditions, like screen width, height, or device type.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 295,
+    "question": "What are pseudo-classes in CSS again?",
+    "answer": "Selectors targeting element states, e.g., :hover, :focus, :nth-child().",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 296,
+    "question": "What are pseudo-elements in CSS again?",
+    "answer": "Selectors targeting parts of elements, like ::before, ::after, ::first-letter.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 297,
+    "question": "What is the difference between inline, block, and inline-block in CSS again?",
+    "answer": "inline — horizontal flow, ignores width/height; block — full width, stacked; inline-block — inline but respects width/height.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 298,
+    "question": "What are z-index and stacking context in CSS again?",
+    "answer": "z-index — element stacking order; stacking context — a group of elements with a defined order.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 299,
+    "question": "What are CSS transitions and animations again?",
+    "answer": "Transitions — smooth property changes; Animations — keyframe-based, can run automatically or infinitely.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 300,
+    "question": "What's the difference between visibility:hidden and display:none in CSS?",
+    "answer": "visibility:hidden — element invisible but occupies space; display:none — element removed from layout.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 301,
+    "question": "What are floats used for in CSS?",
+    "answer": "Originally for wrapping text around elements; now often replaced by flexbox/grid.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 302,
+    "question": "What are the differences between relative, absolute, fixed, and sticky positioning in CSS?",
+    "answer": "relative — offset from normal; absolute — relative to nearest positioned parent; fixed — relative to viewport; sticky — behaves relative until threshold, then sticks.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 303,
+    "question": "What are the main features of CSS variables again?",
+    "answer": "Custom properties (--name), reuse, dynamic changes via JS, scoped to selectors.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 304,
+    "question": "How to declare and use a CSS variable again?",
+    "answer": "Declaring: --main-color: red; Using: color: var(--main-color);",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 305,
+    "question": "What are CSS functions like calc(), min(), max(), clamp() used for again?",
+    "answer": "calc() — arithmetic in CSS; min()/max() — pick min/max value; clamp() — constrain between min and max.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 306,
+    "question": "How does box-sizing: border-box help again?",
+    "answer": "Includes padding and border in width/height, simplifying layout.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 307,
+    "question": "How does CSS specificity work again?",
+    "answer": "Inline styles > IDs > classes/attributes/pseudo-classes > elements/pseudo-elements.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 308,
+    "question": "What are the different ways to include CSS in HTML again?",
+    "answer": "Inline (style), internal (style tag), external (link to CSS file).",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 309,
+    "question": "What are the main flexbox properties again?",
+    "answer": "display: flex; flex-direction; justify-content; align-items; align-self; flex-wrap; gap.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 310,
+    "question": "What are the main grid properties again?",
+    "answer": "display: grid; grid-template-columns/rows; grid-gap; grid-area; justify-items; align-items; grid-auto-flow.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 311,
+    "question": "What is the difference between flexbox and grid again?",
+    "answer": "Flexbox — 1D layout (row/column); Grid — 2D layout (rows + columns).",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 312,
+    "question": "What are breakpoints in responsive design again?",
+    "answer": "Screen sizes where layout changes, e.g., 520px → 2 columns, 900px → 6 columns.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 313,
+    "question": "What's the difference between em and rem again?",
+    "answer": "em — relative to parent; rem — relative to root font size.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 314,
+    "question": "What is the difference between relative, absolute, fixed, and sticky positioning yet again?",
+    "answer": "relative — offsets within flow; absolute — removed, relative to ancestor; fixed — viewport; sticky — scrolls then sticks.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 315,
+    "question": "What are pseudo-classes and pseudo-elements once more?",
+    "answer": "pseudo-class — element state (:hover, :focus); pseudo-element — part of element (::before, ::after).",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 316,
+    "question": "What are inline, block, and inline-block differences again?",
+    "answer": "inline — horizontal, ignores width/height; block — full width, stacked; inline-block — inline but respects width/height.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 317,
+    "question": "What are CSS transitions and animations once more?",
+    "answer": "Transitions — smooth property changes; Animations — keyframe-based, can run automatically or infinitely.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 318,
+    "question": "What are z-index and stacking context once more?",
+    "answer": "z-index — element stack order; stacking context — group of elements with defined order.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 319,
+    "question": "What is the difference between visibility:hidden and display:none again?",
+    "answer": "visibility:hidden — element invisible but occupies space; display:none — removed from layout.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 320,
+    "question": "What are floats in CSS used for again?",
+    "answer": "Originally for text wrapping; now mostly replaced by flexbox/grid.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 321,
+    "question": "How to declare and use CSS variables again?",
+    "answer": "Declare: --main-color: red; Use: color: var(--main-color);",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 322,
+    "question": "What are CSS functions like calc(), min(), max(), clamp() again?",
+    "answer": "calc() — arithmetic; min()/max() — choose min/max; clamp() — constrain between min and max.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 323,
+    "question": "What does box-sizing: border-box do again?",
+    "answer": "Includes padding and border in element's width/height, making layouts easier.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 324,
+    "question": "How does CSS specificity work again?",
+    "answer": "Inline styles > IDs > classes/attributes/pseudo-classes > elements/pseudo-elements.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 325,
+    "question": "What are the ways to include CSS in HTML again?",
+    "answer": "Inline (style attribute), internal (style tag), external (link to CSS file).",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 326,
+    "question": "What are the main flexbox properties again?",
+    "answer": "display: flex; flex-direction; justify-content; align-items; align-self; flex-wrap; gap.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 327,
+    "question": "What are the main grid properties again?",
+    "answer": "display: grid; grid-template-columns/rows; grid-gap; grid-area; justify-items; align-items; grid-auto-flow.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 328,
+    "question": "What's the difference between flexbox and grid again?",
+    "answer": "Flexbox — 1D layout (row/column); Grid — 2D layout (rows + columns).",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 329,
+    "question": "What are breakpoints in responsive design again?",
+    "answer": "Screen widths where layout changes, e.g., mobile vs desktop.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 330,
+    "question": "What's the difference between em and rem again?",
+    "answer": "em — relative to parent; rem — relative to root font size.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 331,
+    "question": "What are relative and absolute units in CSS again?",
+    "answer": "Absolute units (px, cm) fixed; relative units (%, em, rem, vw, vh) adapt to context.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 332,
+    "question": "What are media queries again?",
+    "answer": "CSS rules applied under specific conditions like screen width or device type.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 333,
+    "question": "What are pseudo-classes in CSS again?",
+    "answer": "Selectors targeting element states, e.g., :hover, :focus, :nth-child().",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 334,
+    "question": "What are pseudo-elements in CSS again?",
+    "answer": "Selectors targeting parts of elements, like ::before, ::after, ::first-letter.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 335,
+    "question": "What's the difference between inline, block, and inline-block again?",
+    "answer": "inline — horizontal, ignores width/height; block — full width, stacked; inline-block — inline but respects width/height.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 336,
+    "question": "What are z-index and stacking context again?",
+    "answer": "z-index — element stack order; stacking context — group of elements with defined order.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 337,
+    "question": "What are CSS transitions and animations again?",
+    "answer": "Transitions — smooth property changes; Animations — keyframe-based, can run automatically or infinitely.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 338,
+    "question": "What's the difference between visibility:hidden and display:none again?",
+    "answer": "visibility:hidden — element invisible but occupies space; display:none — removed from layout.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 339,
+    "question": "What are floats used for in CSS again?",
+    "answer": "Originally for wrapping text; now mostly replaced by flexbox/grid.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 340,
+    "question": "What are CSS variables again?",
+    "answer": "Custom properties (--name), reusable, can be changed via JS, scoped to selectors.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 341,
+    "question": "How to declare and use CSS variables again?",
+    "answer": "Declare: --main-color: red; Use: color: var(--main-color);",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 342,
+    "question": "What are CSS functions like calc(), min(), max(), clamp() used for again?",
+    "answer": "calc() — arithmetic in CSS; min()/max() — pick min/max value; clamp() — constrain between min and max.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 343,
+    "question": "How does box-sizing: border-box help again?",
+    "answer": "Includes padding and border in width/height, simplifying layout.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 344,
+    "question": "How does CSS specificity work again?",
+    "answer": "Inline styles > IDs > classes/attributes/pseudo-classes > elements/pseudo-elements.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 345,
+    "question": "What are the different ways to include CSS in HTML again?",
+    "answer": "Inline (style), internal (style tag), external (link to CSS file).",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 346,
+    "question": "What are the main flexbox properties again?",
+    "answer": "display: flex; flex-direction; justify-content; align-items; align-self; flex-wrap; gap.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 347,
+    "question": "What are the main grid properties again?",
+    "answer": "display: grid; grid-template-columns/rows; grid-gap; grid-area; justify-items; align-items; grid-auto-flow.",
+    "category": "CSS Grid",
+    "difficulty": "medium"
+  },
+  {
+    "id": 348,
+    "question": "What's the difference between flexbox and grid again?",
+    "answer": "Flexbox — 1D layout (row/column); Grid — 2D layout (rows + columns).",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 349,
+    "question": "What are breakpoints in responsive design again?",
+    "answer": "Screen sizes where layout changes, e.g., 520px → 2 columns, 900px → 6 columns.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 350,
+    "question": "What's the difference between em and rem again?",
+    "answer": "em — relative to parent; rem — relative to root font size.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 351,
+    "question": "What is the difference between relative, absolute, fixed, and sticky positioning again?",
+    "answer": "relative — offset from normal; absolute — relative to nearest positioned parent; fixed — relative to viewport; sticky — behaves relative until threshold, then sticks.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 352,
+    "question": "What are pseudo-classes and pseudo-elements again?",
+    "answer": "Pseudo-class — element state (:hover, :focus); pseudo-element — part of element (::before, ::after).",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 353,
+    "question": "What's the difference between visibility:hidden and display:none again?",
+    "answer": "visibility:hidden — element invisible but occupies space; display:none — removed from layout.",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 354,
+    "question": "What are CSS transitions and animations again?",
+    "answer": "Transitions — smooth property changes; Animations — keyframe-based, can run automatically or infinitely.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 355,
+    "question": "What is the difference between inline, block, and inline-block again?",
+    "answer": "inline — horizontal, ignores width/height; block — full width, stacked; inline-block — inline but respects width/height.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 356,
+    "question": "What are z-index and stacking context again?",
+    "answer": "z-index — element stack order; stacking context — group of elements with defined order.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 357,
+    "question": "What are floats used for in CSS again?",
+    "answer": "Originally for wrapping text; now mostly replaced by flexbox/grid.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 358,
+    "question": "What are CSS variables again?",
+    "answer": "Custom properties (--name), reusable, can be changed via JS, scoped to selectors.",
+    "category": "CSS",
+    "difficulty": "medium"
+  },
+  {
+    "id": 359,
+    "question": "How to declare and use CSS variables again?",
+    "answer": "Declare: --main-color: red; Use: color: var(--main-color);",
+    "category": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "id": 360,
+    "question": "What are CSS functions like calc(), min(), max(), clamp() used for again?",
+    "answer": "calc() — arithmetic in CSS; min()/max() — pick min/max value; clamp() — constrain between min and max.",
+    "category": "CSS",
+    "difficulty": "medium"
+  }
+]

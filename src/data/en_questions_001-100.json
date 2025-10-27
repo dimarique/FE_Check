@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "question": "What will this code output: console.log('First'); setTimeout(() => console.log('Second'), 100); console.log('Third');",
+    "answer": "It will log 'First', then 'Third', and finally 'Second'.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "question": "What is setTimeout in JavaScript?",
+    "answer": "A function that delays the execution of a callback for a specified time.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "What does the fetch function do?",
+    "answer": "It performs an HTTP request and returns a promise with a Response object.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "question": "What methods does the Response object have?",
+    "answer": ".text(), .json(), .blob(), .arrayBuffer(), .formData()",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "question": "What are HTTP methods GET and POST?",
+    "answer": "GET — for retrieving data, POST — for sending data.",
+    "category": "HTTP",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "question": "What do status codes 200, 404, and 500 mean?",
+    "answer": "200 — success, 404 — not found, 500 — server error.",
+    "category": "HTTP",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "question": "How to send parameters with fetch using POST?",
+    "answer": "Using the options object: { method: 'POST', body: JSON.stringify(data), headers: {...} }.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "question": "Why is JavaScript single-threaded?",
+    "answer": "Because it has only one Call Stack and executes one task at a time.",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "question": "What is the Event Loop?",
+    "answer": "A mechanism that manages the execution of code, callbacks, and promises.",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "question": "What is the Call Stack?",
+    "answer": "A stack where synchronous code is executed.",
+    "category": "Event Loop",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "question": "What is the Callback Queue?",
+    "answer": "A queue where callbacks, such as from setTimeout, are placed.",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "question": "What is the Microtask Queue?",
+    "answer": "A queue of microtasks like then(), catch(), and finally().",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "question": "Which runs first — promises or setTimeout?",
+    "answer": "Promises (microtasks) run first, then setTimeout (macrotasks).",
+    "category": "Event Loop",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "question": "What does the async keyword do?",
+    "answer": "It makes a function always return a promise.",
+    "category": "Async/Await",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "question": "What does await do?",
+    "answer": "It pauses the execution of the function until the promise resolves.",
+    "category": "Async/Await",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "question": "Can you use await outside of an async function?",
+    "answer": "No.",
+    "category": "Async/Await",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "question": "What happens if an error is thrown inside an async function?",
+    "answer": "The function returns a rejected promise.",
+    "category": "Async/Await",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "question": "How do you handle errors in async/await?",
+    "answer": "Using try/catch blocks.",
+    "category": "Async/Await",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "question": "Why is async/await more convenient than then?",
+    "answer": "Because the code looks synchronous and is easier to read.",
+    "category": "Async/Await",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "question": "Why do we use Promise.all?",
+    "answer": "To run multiple promises in parallel.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "question": "How does Promise.all work?",
+    "answer": "It waits for all promises to resolve or rejects if one fails.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "question": "What does Promise.all return?",
+    "answer": "A promise that resolves with an array of results.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "question": "If p1 resolves in 1s and p2 in 2s, how long will Promise.all([p1,p2]) wait?",
+    "answer": "2 seconds.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "question": "What happens if one promise in Promise.all rejects?",
+    "answer": "The entire Promise.all rejects.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "question": "What does Promise.race do?",
+    "answer": "It returns the result of the first promise to settle.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "question": "What is Promise.any?",
+    "answer": "It resolves as soon as one of the promises resolves (ignores rejections).",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "question": "What is Promise.allSettled?",
+    "answer": "It waits for all promises and returns their results, whether fulfilled or rejected.",
+    "category": "Promises",
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "question": "What is localStorage?",
+    "answer": "A browser storage that keeps data even after the page reloads.",
+    "category": "Web API",
+    "difficulty": "easy"
+  },
+  {
+    "id": 29,
+    "question": "What is sessionStorage?",
+    "answer": "Storage that keeps data only until the tab or window is closed.",
+    "category": "Web API",
+    "difficulty": "easy"
+  },
+  {
+    "id": 30,
+    "question": "What is the difference between localStorage and cookies?",
+    "answer": "Cookies are sent with every request, while localStorage is not.",
+    "category": "Web API",
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "question": "How to store an object in localStorage?",
+    "answer": "Use JSON.stringify() when saving and JSON.parse() when reading.",
+    "category": "Web API",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "question": "What is the DOM?",
+    "answer": "A tree-like structure that represents all elements of an HTML document.",
+    "category": "DOM",
+    "difficulty": "easy"
+  },
+  {
+    "id": 33,
+    "question": "How to select an element by its id?",
+    "answer": "document.getElementById('id')",
+    "category": "DOM",
+    "difficulty": "easy"
+  },
+  {
+    "id": 34,
+    "question": "How to select elements by class?",
+    "answer": "document.getElementsByClassName('class') or document.querySelectorAll('.class')",
+    "category": "DOM",
+    "difficulty": "easy"
+  },
+  {
+    "id": 35,
+    "question": "How to add a class to an element?",
+    "answer": "element.classList.add('className')",
+    "category": "DOM",
+    "difficulty": "easy"
+  },
+  {
+    "id": 36,
+    "question": "How to change the text inside an element?",
+    "answer": "element.textContent = 'New text'",
+    "category": "DOM",
+    "difficulty": "easy"
+  },
+  {
+    "id": 37,
+    "question": "What are event listeners?",
+    "answer": "Functions that run when a certain event happens (e.g., click).",
+    "category": "DOM",
+    "difficulty": "easy"
+  },
+  {
+    "id": 38,
+    "question": "How to add a click handler?",
+    "answer": "element.addEventListener('click', handler)",
+    "category": "DOM",
+    "difficulty": "easy"
+  },
+  {
+    "id": 39,
+    "question": "What is event bubbling?",
+    "answer": "When an event triggers first on the innermost element and then bubbles up.",
+    "category": "DOM",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "question": "How to stop event bubbling?",
+    "answer": "event.stopPropagation()",
+    "category": "DOM",
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "question": "What is event delegation?",
+    "answer": "Attaching a handler to a parent element instead of many children.",
+    "category": "DOM",
+    "difficulty": "medium"
+  },
+  {
+    "id": 42,
+    "question": "What is a closure in JavaScript?",
+    "answer": "A function that remembers variables from its outer scope.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 43,
+    "question": "Why are closures useful?",
+    "answer": "They let you keep private data and state inside functions.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "question": "What will this code log: for (var i=0; i<3; i++) setTimeout(() => console.log(i), 0)?",
+    "answer": "It will log 3, 3, 3 — because var is function-scoped.",
+    "category": "JavaScript",
+    "difficulty": "hard"
+  },
+  {
+    "id": 45,
+    "question": "How to fix the previous example to log 0,1,2?",
+    "answer": "Use let instead of var.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 46,
+    "question": "What does 'this' refer to inside a regular function?",
+    "answer": "It depends on how the function was called.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 47,
+    "question": "What does 'this' refer to inside an arrow function?",
+    "answer": "It inherits 'this' from its outer scope.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 48,
+    "question": "How to explicitly set the value of 'this'?",
+    "answer": "Using call(), apply(), or bind().",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 49,
+    "question": "What is the difference between call() and apply()?",
+    "answer": "call() takes arguments separately, apply() takes them as an array.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "question": "What does bind() do?",
+    "answer": "It returns a new function with a fixed 'this'.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 51,
+    "question": "What are arrow functions?",
+    "answer": "A shorter syntax for writing functions, without their own 'this'.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 52,
+    "question": "How to create an object in JavaScript?",
+    "answer": "Using {} or the Object constructor.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 53,
+    "question": "How to clone an object?",
+    "answer": "Using Object.assign({}, obj) or the spread operator {...obj}.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 54,
+    "question": "How to check if a key exists in an object?",
+    "answer": "Use 'key in obj' or obj.hasOwnProperty(key).",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 55,
+    "question": "What is destructuring?",
+    "answer": "A syntax for extracting values from arrays or objects into variables.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 56,
+    "question": "How to swap two variables using destructuring?",
+    "answer": "[a, b] = [b, a]",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 57,
+    "question": "What is the spread operator?",
+    "answer": "It expands arrays or objects into individual elements.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 58,
+    "question": "What is the rest operator?",
+    "answer": "It collects remaining elements into an array.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 59,
+    "question": "How are spread and rest operators different?",
+    "answer": "Spread expands, rest collects.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 60,
+    "question": "What is JSON?",
+    "answer": "A lightweight data format based on key-value pairs.",
+    "category": "JSON",
+    "difficulty": "easy"
+  },
+  {
+    "id": 61,
+    "question": "How to convert an object to JSON?",
+    "answer": "Using JSON.stringify(obj).",
+    "category": "JSON",
+    "difficulty": "easy"
+  },
+  {
+    "id": 62,
+    "question": "How to parse JSON into an object?",
+    "answer": "Using JSON.parse(jsonString).",
+    "category": "JSON",
+    "difficulty": "easy"
+  },
+  {
+    "id": 63,
+    "question": "What are arrays in JavaScript?",
+    "answer": "Ordered lists of elements.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 64,
+    "question": "How to add an element to an array?",
+    "answer": "Using push() or unshift().",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 65,
+    "question": "How to remove an element from an array?",
+    "answer": "Using pop(), shift(), or splice().",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 66,
+    "question": "What does map() do?",
+    "answer": "Creates a new array by applying a function to each element.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 67,
+    "question": "What does filter() do?",
+    "answer": "Creates a new array with elements that pass a condition.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 68,
+    "question": "What does reduce() do?",
+    "answer": "Reduces an array to a single value using a callback function.",
+    "category": "JavaScript",
+    "difficulty": "hard"
+  },
+  {
+    "id": 69,
+    "question": "What does forEach() do?",
+    "answer": "Executes a function for each array element, without returning a new array.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 70,
+    "question": "What is the difference between map() and forEach()?",
+    "answer": "map() returns a new array, forEach() doesn’t.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 71,
+    "question": "What is the difference between slice() and splice()?",
+    "answer": "slice() copies, splice() changes the original array.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 72,
+    "question": "What does find() do?",
+    "answer": "Returns the first element that matches a condition.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 73,
+    "question": "What does some() do?",
+    "answer": "Checks if at least one element satisfies a condition.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 74,
+    "question": "What does every() do?",
+    "answer": "Checks if all elements satisfy a condition.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 75,
+    "question": "What is NaN?",
+    "answer": "A special value representing 'Not a Number'.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 76,
+    "question": "How to check if a value is NaN?",
+    "answer": "Use Number.isNaN(value).",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 77,
+    "question": "What is the difference between == and ===?",
+    "answer": "== compares with type coercion, === compares without it.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 78,
+    "question": "What does typeof null return?",
+    "answer": "It returns 'object' — that’s a known bug in JavaScript.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 79,
+    "question": "What is undefined?",
+    "answer": "A variable that has been declared but not assigned a value.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 80,
+    "question": "What is the difference between null and undefined?",
+    "answer": "undefined — not assigned; null — explicitly empty.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 81,
+    "question": "What is hoisting?",
+    "answer": "JavaScript’s behavior of moving declarations to the top of their scope.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 82,
+    "question": "Are let and const hoisted?",
+    "answer": "Yes, but they are in the temporal dead zone until declared.",
+    "category": "JavaScript",
+    "difficulty": "hard"
+  },
+  {
+    "id": 83,
+    "question": "What are higher-order functions?",
+    "answer": "Functions that take other functions as arguments or return them.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 84,
+    "question": "What is immutability?",
+    "answer": "The principle that data should not be modified directly.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 85,
+    "question": "What is a pure function?",
+    "answer": "A function that always returns the same result with the same inputs and has no side effects.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 86,
+    "question": "What is NaN === NaN?",
+    "answer": "false — NaN is not equal to itself.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 87,
+    "question": "How to properly check if a variable is an array?",
+    "answer": "Use Array.isArray(value).",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 88,
+    "question": "What is the DOMContentLoaded event?",
+    "answer": "It fires when HTML is fully loaded and parsed, but images may still be loading.",
+    "category": "DOM",
+    "difficulty": "medium"
+  },
+  {
+    "id": 89,
+    "question": "What is the load event?",
+    "answer": "It fires when the entire page, including resources, is fully loaded.",
+    "category": "DOM",
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "question": "What is event.preventDefault()?",
+    "answer": "It cancels the default action of an event (like form submission).",
+    "category": "DOM",
+    "difficulty": "easy"
+  },
+  {
+    "id": 91,
+    "question": "What is an IIFE?",
+    "answer": "Immediately Invoked Function Expression — a function that runs right after being defined.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 92,
+    "question": "What are modules in JavaScript?",
+    "answer": "Files that export and import code for better structure.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 93,
+    "question": "What does export default mean?",
+    "answer": "It exports one main value from a module.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 94,
+    "question": "How to import only one specific function?",
+    "answer": "import { func } from './file.js'",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 95,
+    "question": "What is a template literal?",
+    "answer": "A string enclosed in backticks that allows ${expression} inside.",
+    "category": "JavaScript",
+    "difficulty": "easy"
+  },
+  {
+    "id": 96,
+    "question": "What is short-circuit evaluation?",
+    "answer": "When logical operators stop evaluating once the result is known.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 97,
+    "question": "What does 'use strict' do?",
+    "answer": "Enables strict mode, which makes code safer and prevents certain errors.",
+    "category": "JavaScript",
+    "difficulty": "medium"
+  },
+  {
+    "id": 98,
+    "question": "What are template engines?",
+    "answer": "Tools that generate HTML from templates and data.",
+    "category": "Web Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 99,
+    "question": "What is CORS?",
+    "answer": "A mechanism that allows or restricts cross-origin HTTP requests.",
+    "category": "HTTP",
+    "difficulty": "hard"
+  },
+  {
+    "id": 100,
+    "question": "How to enable CORS on the server?",
+    "answer": "By setting the header Access-Control-Allow-Origin.",
+    "category": "HTTP",
+    "difficulty": "hard"
+  }
+]

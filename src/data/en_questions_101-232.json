@@ -1,0 +1,926 @@
+[
+  {
+    "id": 101,
+    "question": "What is used in React to render lists instead of loops?",
+    "answer": "The array method map.",
+    "category": "React: Rendering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 102,
+    "question": "Why is it important to specify the key attribute when rendering lists?",
+    "answer": "For performance optimization and correct element updates.",
+    "category": "React: Rendering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 103,
+    "question": "Why is it not recommended to use the array index as a key?",
+    "answer": "Because it can lead to errors when the list changes.",
+    "category": "React: Rendering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 104,
+    "question": "How are objects and arrays passed in props?",
+    "answer": "Using curly braces as dynamic values.",
+    "category": "React: Props",
+    "difficulty": "easy"
+  },
+  {
+    "id": 105,
+    "question": "What does the special children prop do?",
+    "answer": "It passes the content between the opening and closing component tags.",
+    "category": "React: Props",
+    "difficulty": "easy"
+  },
+  {
+    "id": 106,
+    "question": "How are event handlers added in React?",
+    "answer": "Through JSX attributes in camelCase, for example onClick.",
+    "category": "React: Events",
+    "difficulty": "easy"
+  },
+  {
+    "id": 107,
+    "question": "What is SyntheticEvent?",
+    "answer": "A cross-browser wrapper for events in React.",
+    "category": "React: Events",
+    "difficulty": "medium"
+  },
+  {
+    "id": 108,
+    "question": "How to prevent page reload when clicking a button inside a form?",
+    "answer": "Use event.preventDefault().",
+    "category": "React: Events",
+    "difficulty": "easy"
+  },
+  {
+    "id": 109,
+    "question": "Why pass functions in props?",
+    "answer": "So they can be called inside child components when an event occurs.",
+    "category": "React: Props",
+    "difficulty": "medium"
+  },
+  {
+    "id": 110,
+    "question": "Why use a wrapper component with children?",
+    "answer": "To wrap nested elements in a common container with desired markup or styles.",
+    "category": "React: Props",
+    "difficulty": "easy"
+  },
+  {
+    "id": 111,
+    "question": "What is a component's local state in React?",
+    "answer": "It's the internal memory of the component that persists through re-renders and triggers a new render when changed.",
+    "category": "React: State",
+    "difficulty": "easy"
+  },
+  {
+    "id": 112,
+    "question": "Why can't you use a simple local variable instead of state?",
+    "answer": "Because the variable won't persist through re-renders and its change won't trigger a re-render.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 113,
+    "question": "What is the useState hook?",
+    "answer": "A function from React that allows creating and managing a component's local state.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 114,
+    "question": "What does the useState hook return?",
+    "answer": "An array with two elements: the current state value and a function to update it.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 115,
+    "question": "What value initializes state on first render?",
+    "answer": "The value passed as an argument to useState.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 116,
+    "question": "Why shouldn't state be mutated directly?",
+    "answer": "Because React won't recognize it as a change and won't schedule a re-render.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 117,
+    "question": "What rules must be followed when using hooks?",
+    "answer": "Call them only at the top level of the component and not inside conditions.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 118,
+    "question": "What happens when state is changed using setState?",
+    "answer": "React schedules a new render for the component.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 119,
+    "question": "Where should state be stored for optimization?",
+    "answer": "At the level in the component hierarchy where it is actually needed.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 120,
+    "question": "Can multiple states be used in one component?",
+    "answer": "Yes, useState can be called multiple times, each state being independent.",
+    "category": "React: State",
+    "difficulty": "easy"
+  },
+  {
+    "id": 121,
+    "question": "What can be stored in local state besides primitives?",
+    "answer": "Objects, arrays, and other non-primitive values can be stored.",
+    "category": "React: State",
+    "difficulty": "easy"
+  },
+  {
+    "id": 122,
+    "question": "Why can't arrays or objects in state be mutated directly?",
+    "answer": "Because it mutates state, and React won't consider the component for re-render.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 123,
+    "question": "How to correctly update an array in local state?",
+    "answer": "Create a new array based on the old one and pass it to setState.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 124,
+    "question": "What does the setState callback form setState(oldState => newState) do?",
+    "answer": "Allows creating a new state based on the previous one.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 125,
+    "question": "How to update an object in local state?",
+    "answer": "Create a new object with the updated properties and pass it to setState.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 126,
+    "question": "What is state lifting?",
+    "answer": "Moving state to the nearest common ancestor component that needs it, and passing it via props.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 127,
+    "question": "Why lift state only to the nearest common ancestor?",
+    "answer": "To avoid unnecessary re-renders and not pass data through unneeded components.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 128,
+    "question": "How can data be shared between multiple components?",
+    "answer": "Lift state to a common component and pass it via props.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 129,
+    "question": "What happens if you mutate an array in state using push?",
+    "answer": "React won't re-render, because the object in memory remains the same.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 130,
+    "question": "How to implement adding a new item to a todo list?",
+    "answer": "Use setState to create a new array including old items and the new one.",
+    "category": "React: State",
+    "difficulty": "medium"
+  },
+  {
+    "id": 131,
+    "question": "What does the useEffect hook do?",
+    "answer": "Synchronizes the component with external systems and performs side effects.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 132,
+    "question": "What are side effects in React?",
+    "answer": "Actions after rendering that don't directly affect the current render, e.g., requests, subscriptions, DOM changes, timers, working with localStorage.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 133,
+    "question": "What are the lifecycle phases of a functional component?",
+    "answer": "Mounting, updating, unmounting.",
+    "category": "React: Lifecycle",
+    "difficulty": "easy"
+  },
+  {
+    "id": 134,
+    "question": "What is the syntax of useEffect and why is the dependency array needed?",
+    "answer": "useEffect(callback, deps); the array indicates when to run the effect.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 135,
+    "question": "When does an effect run without a dependency array?",
+    "answer": "After every render, on mounting and on every update.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 136,
+    "question": "What does an empty dependency array mean?",
+    "answer": "The effect runs once on mounting, and the cleanup function runs on unmounting.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 137,
+    "question": "How to perform an action when a component unmounts?",
+    "answer": "Return a cleanup function from the effect; it runs when the component is removed from the DOM.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 138,
+    "question": "How to track changes to a specific prop or part of state?",
+    "answer": "Include them in the dependency array; the effect will run when they change.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 139,
+    "question": "Where to place effects and can there be multiple?",
+    "answer": "Only at the top level of a component; there can be multiple effects.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 140,
+    "question": "What tasks are useEffect usually used for?",
+    "answer": "Backend requests, WebSockets, event listeners, timers and intervals, working with localStorage.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 141,
+    "question": "What is useEffect most often used for when working with network?",
+    "answer": "To send requests to the server and synchronize component data with the backend.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 142,
+    "question": "Why shouldn't you send a request directly in the component body?",
+    "answer": "Because the request will execute on every component re-render.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 143,
+    "question": "At what lifecycle phase are network requests usually made?",
+    "answer": "At the mounting phase.",
+    "category": "React: Lifecycle",
+    "difficulty": "easy"
+  },
+  {
+    "id": 144,
+    "question": "Why add productId to the dependency array of an effect?",
+    "answer": "So the effect runs when the product identifier changes.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 145,
+    "question": "How to display data received from a request on the screen?",
+    "answer": "Store it in local state and use it during rendering.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 146,
+    "question": "What happens if you don't specify a dependency array in useEffect?",
+    "answer": "The effect will run after every render.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 147,
+    "question": "How to handle errors during network requests?",
+    "answer": "Using try...catch or handling errors in the then/catch chain.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 148,
+    "question": "How to implement a loading indicator?",
+    "answer": "Use a separate loading state and show a message instead of data while the request is in progress.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 149,
+    "question": "Why use async/await inside useEffect?",
+    "answer": "To write asynchronous request code more clearly and conveniently.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 150,
+    "question": "How to implement product filtering by categories?",
+    "answer": "Fetch the list of categories, render them in a dropdown, and on selecting a category, request products for that category.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 151,
+    "question": "Why use context in React?",
+    "answer": "To avoid prop drilling and share data between components at different levels.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 152,
+    "question": "What is prop drilling?",
+    "answer": "Forcing props through a chain of intermediate components that don't need the data.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 153,
+    "question": "How to create a context?",
+    "answer": "Call createContext(initialValue) and export the resulting context object.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 154,
+    "question": "Why is a Provider needed for context?",
+    "answer": "It wraps part of the tree and passes the value via the prop to all consumers below.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 155,
+    "question": "How to get context value in a component?",
+    "answer": "Call useContext(MyContext) and use the returned value.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 156,
+    "question": "What happens if you don't specify value for Provider?",
+    "answer": "The default value set in createContext will be used.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 157,
+    "question": "When is it better to use context instead of lifting state?",
+    "answer": "When data is needed by many components at different levels and passing props complicates the code.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 158,
+    "question": "Can objects and functions be passed in context?",
+    "answer": "Yes, any values including objects and callbacks can be in value.",
+    "category": "React: Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": 159,
+    "question": "How to link context with local state?",
+    "answer": "Store state in the parent and pass the current value and update functions through value.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 160,
+    "question": "Why move the provider to a separate component like ThemeContextProvider?",
+    "answer": "To encapsulate context state and logic and simplify context usage in the app.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 161,
+    "question": "What is the useRef hook for?",
+    "answer": "To access real DOM elements and store values between renders without triggering re-render.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 162,
+    "question": "What can a ref be attached to?",
+    "answer": "Only to DOM elements, accessible via the current property.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 163,
+    "question": "How to get element dimensions using ref?",
+    "answer": "Use btnRef.current.offsetWidth and btnRef.current.offsetHeight.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 164,
+    "question": "How does ref differ from useState?",
+    "answer": "Ref is mutable and changing it doesn’t trigger a re-render; useState triggers a re-render.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 165,
+    "question": "How to focus an input on first render?",
+    "answer": "Create a ref and call inputRef.current.focus() in useEffect.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 166,
+    "question": "Can you read input value via ref without state?",
+    "answer": "Yes, from inputRef.current.value.",
+    "category": "React: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 167,
+    "question": "Why use react-hook-form?",
+    "answer": "To simplify working with forms and validation without unnecessary re-renders.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 168,
+    "question": "What does useForm return and what are register and handleSubmit for?",
+    "answer": "Register registers fields, handleSubmit handles submit with validation.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 169,
+    "question": "Where to get and how to render field errors?",
+    "answer": "From formState.errors and display messages conditionally under inputs.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 170,
+    "question": "How to set validation rules and messages in register?",
+    "answer": "Pass an object with required, minLength, maxLength, pattern, or validate, specifying a message for each check.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 171,
+    "question": "What does react-router library do in a React app?",
+    "answer": "It enables routing and simulates multi-page behavior in a SPA.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 172,
+    "question": "Why wrap the app in BrowserRouter?",
+    "answer": "To enable routing and provide route context.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 173,
+    "question": "Which components are used to create routes?",
+    "answer": "Routes and Route components.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 174,
+    "question": "What does the path prop on Route do?",
+    "answer": "Specifies the address at which the component will render.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 175,
+    "question": "How to set a default route?",
+    "answer": "Specify path=\"/\" for the desired component.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 176,
+    "question": "How to render a component for any route?",
+    "answer": "Place it outside the Routes wrapper.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 177,
+    "question": "What are nested routes?",
+    "answer": "Routes inside other routes, displayed in the parent's Outlet.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 178,
+    "question": "What is the Outlet component for?",
+    "answer": "To specify where the nested route should render inside the parent.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 179,
+    "question": "What is the difference between Link and NavLink?",
+    "answer": "Link simply navigates; NavLink can show active state.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 180,
+    "question": "Why are router links better than typing the address manually?",
+    "answer": "They allow SPA navigation without page reload.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 181,
+    "question": "What is a parameterized route?",
+    "answer": "A route where part of the path is dynamic via :paramName, e.g., /details/:id.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 182,
+    "question": "Why use parameterized routes?",
+    "answer": "To pass data via URL, e.g., a product id to show details.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 183,
+    "question": "How to get route parameters in a component?",
+    "answer": "Use the useParams hook, which returns an object with parameters.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 184,
+    "question": "What will useParams return for /products/5 with path=\"/products/:id\"?",
+    "answer": "Object { id: \"5\" }.",
+    "category": "React: Router",
+    "difficulty": "easy"
+  },
+  {
+    "id": 185,
+    "question": "How to make a route parameter optional?",
+    "answer": "Add a question mark, e.g., :id?.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 186,
+    "question": "What happens if the optional parameter is missing in URL?",
+    "answer": "The component still renders, parameter will be undefined.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 187,
+    "question": "Can multiple parameters be used in a route?",
+    "answer": "Yes, e.g., /shop/:category/:productId.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 188,
+    "question": "Difference between passing data via context and URL parameters?",
+    "answer": "Context is used inside the React app; URL params are convenient for navigation and direct links.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 189,
+    "question": "How to use category parameter for filtering products?",
+    "answer": "Extract category via useParams and include it in the API request.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 190,
+    "question": "What happens when visiting /products without parameters if route is /products/:category??",
+    "answer": "The same component renders, category param is empty, can show all products.",
+    "category": "React: Router",
+    "difficulty": "medium"
+  },
+  {
+    "id": 191,
+    "question": "What is stored in Redux store?",
+    "answer": "The global app state, structured into slices (reducers).",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 192,
+    "question": "Why are actions needed?",
+    "answer": "To describe what state change should happen and pass data for it.",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 193,
+    "question": "What does a reducer do?",
+    "answer": "A pure function that takes current state and action, and returns new state.",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 194,
+    "question": "How to create a Redux store?",
+    "answer": "Call createStore and pass a reducer (or combineReducers for multiple).",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 195,
+    "question": "Why use Provider from react-redux?",
+    "answer": "To pass the store to the entire React app via context.",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 196,
+    "question": "What does useSelector do?",
+    "answer": "Selects a slice of state from Redux store and subscribes to its changes.",
+    "category": "Redux: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 197,
+    "question": "What does useDispatch do?",
+    "answer": "Returns a function to dispatch an action to the store.",
+    "category": "Redux: Hooks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 198,
+    "question": "What is an action creator?",
+    "answer": "A function that creates an action object to avoid writing them manually.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 199,
+    "question": "Why must a reducer be pure?",
+    "answer": "To guarantee predictable and deterministic state updates.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 200,
+    "question": "What is the one-way data flow in Redux?",
+    "answer": "Data flows in one direction: component → dispatch action → reducer → new state → component update.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 201,
+    "question": "What does combineReducers do in Redux?",
+    "answer": "Combines multiple reducers into a single reducer for the store.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 202,
+    "question": "Why is it important not to mutate state in a reducer?",
+    "answer": "Redux tracks changes via reference comparison; mutation causes errors and incorrect updates.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 203,
+    "question": "Why use payload in an action?",
+    "answer": "To pass additional data (e.g., the text of a new todo).",
+    "category": "Redux: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 204,
+    "question": "How to connect a component to Redux store?",
+    "answer": "Use useDispatch to send actions and useSelector to get state.",
+    "category": "Redux: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 205,
+    "question": "How to store both an array and a primitive in Redux?",
+    "answer": "Use an object with multiple properties (e.g., todos and count).",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 206,
+    "question": "Can Redux store async data?",
+    "answer": "Yes, via async actions or middlewares like redux-thunk or redux-saga.",
+    "category": "Redux: Advanced",
+    "difficulty": "medium"
+  },
+  {
+    "id": 207,
+    "question": "What is redux-thunk used for?",
+    "answer": "To dispatch functions (async actions) instead of plain objects.",
+    "category": "Redux: Advanced",
+    "difficulty": "medium"
+  },
+  {
+    "id": 208,
+    "question": "How does middleware work in Redux?",
+    "answer": "It intercepts actions before they reach the reducer, can modify, log, or handle async.",
+    "category": "Redux: Advanced",
+    "difficulty": "medium"
+  },
+  {
+    "id": 209,
+    "question": "What is the difference between Redux Toolkit and vanilla Redux?",
+    "answer": "RTK simplifies boilerplate with createSlice, configureStore, and built-in thunk.",
+    "category": "Redux: Advanced",
+    "difficulty": "medium"
+  },
+  {
+    "id": 210,
+    "question": "What is createSlice?",
+    "answer": "Helper from Redux Toolkit to create a reducer and actions together.",
+    "category": "Redux: Advanced",
+    "difficulty": "medium"
+  },
+  {
+    "id": 211,
+    "question": "Why is immutability important in Redux Toolkit slices?",
+    "answer": "RTK uses Immer under the hood, allowing mutable-looking code but keeping state immutable.",
+    "category": "Redux: Advanced",
+    "difficulty": "medium"
+  },
+  {
+    "id": 212,
+    "question": "What is a thunk action?",
+    "answer": "A function returned from an action creator for async logic or delayed dispatch.",
+    "category": "Redux: Advanced",
+    "difficulty": "medium"
+  },
+  {
+    "id": 213,
+    "question": "What is the difference between useState and Redux store?",
+    "answer": "useState is local to a component; Redux stores global state accessible by any component.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 214,
+    "question": "When to choose local state vs Redux state?",
+    "answer": "Local for component-specific values; Redux for app-wide shared state.",
+    "category": "Redux: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 215,
+    "question": "What is the difference between controlled and uncontrolled inputs?",
+    "answer": "Controlled inputs have value from state; uncontrolled rely on ref to read value.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 216,
+    "question": "Why prefer controlled inputs in React?",
+    "answer": "Easier to manage form state, validation, and side effects.",
+    "category": "React: Forms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 217,
+    "question": "What is the difference between props and state?",
+    "answer": "Props are passed from parent, read-only; state is internal and mutable.",
+    "category": "React: Basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 218,
+    "question": "What is lifting state up?",
+    "answer": "Moving state to a common parent to share it among multiple components.",
+    "category": "React: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 219,
+    "question": "Why use key prop in lists?",
+    "answer": "Helps React track items, optimize rendering, and prevent bugs.",
+    "category": "React: Basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 220,
+    "question": "What is React.memo?",
+    "answer": "HOC that prevents re-render if props haven’t changed.",
+    "category": "React: Performance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 221,
+    "question": "How to avoid unnecessary re-renders in React?",
+    "answer": "Use memo, useCallback, useMemo, and avoid creating new objects/functions inline.",
+    "category": "React: Performance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 222,
+    "question": "What is useCallback for?",
+    "answer": "Memoizes a function to prevent re-creation on every render.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 223,
+    "question": "What is useMemo for?",
+    "answer": "Memoizes expensive computed values to avoid recalculation.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 224,
+    "question": "Difference between useEffect and useLayoutEffect?",
+    "answer": "useLayoutEffect runs synchronously after DOM changes, before paint; useEffect runs after paint.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 225,
+    "question": "What does useReducer do?",
+    "answer": "Manages complex state logic similar to Redux inside a component.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 226,
+    "question": "When to use useReducer over useState?",
+    "answer": "When state has multiple sub-values or complex update logic.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 227,
+    "question": "What is a custom hook?",
+    "answer": "A function starting with use that encapsulates reusable logic.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 228,
+    "question": "Why create custom hooks?",
+    "answer": "To share logic between components and keep code DRY.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 229,
+    "question": "Can hooks be called conditionally?",
+    "answer": "No, hooks must be called at the top level of a component.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 230,
+    "question": "Why is the rules of hooks important?",
+    "answer": "Breaking rules can cause inconsistent state and runtime errors.",
+    "category": "React: Hooks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 231,
+    "question": "What is Context API?",
+    "answer": "Provides a way to pass data through the component tree without props.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  },
+  {
+    "id": 232,
+    "question": "When to use Context?",
+    "answer": "For global app settings like themes, language, or user authentication.",
+    "category": "React: Context",
+    "difficulty": "medium"
+  }
+]
