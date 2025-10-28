@@ -1,898 +1,899 @@
 ﻿[
   {
     "id": 233,
-    "question": "Что такое \"нормальный поток\" HTML-элементов?",
-    "answer": "Это стандартный способ расположения элементов. Блочные элементы занимают всю ширину контейнера и идут друг под другом, строчные — располагаются в строку и занимают ширину содержимого.",
+    "question": "Was ist der „normale Fluss“ von HTML-Elementen?",
+    "answer": "Das ist die Standardanordnung der Elemente. Block-Elemente nehmen die gesamte Breite des Containers ein und erscheinen untereinander, Inline-Elemente werden in einer Zeile dargestellt und nehmen nur so viel Platz wie ihr Inhalt ein.",
     "category": "HTML & CSS",
     "difficulty": "easy"
   },
   {
     "id": 234,
-    "question": "Какие бывают значения свойства position?",
+    "question": "Welche Werte kann die CSS-Eigenschaft position haben?",
     "answer": "static, relative, absolute, fixed, sticky.",
     "category": "HTML & CSS",
     "difficulty": "easy"
   },
   {
     "id": 235,
-    "question": "В чём разница между relative и absolute?",
-    "answer": "relative — элемент остаётся в потоке, но может быть смещён; absolute — элемент исключается из потока и позиционируется относительно позиционированного родителя.",
+    "question": "Was ist der Unterschied zwischen relative und absolute?",
+    "answer": "relative – das Element bleibt im Fluss, kann aber verschoben werden; absolute – das Element wird aus dem Fluss genommen und relativ zum positionierten Elternteil platziert.",
     "category": "HTML & CSS",
     "difficulty": "medium"
   },
   {
     "id": 236,
-    "question": "Относительно чего работает absolute?",
-    "answer": "Относительно ближайшего родителя с position, отличным от static. Если такого нет — относительно body.",
+    "question": "Worauf bezieht sich absolute?",
+    "answer": "Auf das nächste Elternteil mit einer Position ungleich static. Wenn kein solches vorhanden ist, bezieht es sich auf das body-Element.",
     "category": "HTML & CSS",
     "difficulty": "medium"
   },
   {
     "id": 237,
-    "question": "Где применяется абсолютное позиционирование?",
-    "answer": "Для модальных окон, кнопок «закрыть», анимаций (слайдеры, карусели).",
+    "question": "Wo wird absolute Positionierung verwendet?",
+    "answer": "Für Modalfenster, Schließen-Schaltflächen und Animationen (z. B. Slider, Karussells).",
     "category": "HTML & CSS",
     "difficulty": "easy"
   },
   {
     "id": 238,
-    "question": "Чем отличается fixed от sticky?",
-    "answer": "fixed всегда остаётся на месте относительно окна браузера; sticky ведёт себя как обычный элемент, но «прилипает» при достижении порога.",
+    "question": "Worin unterscheiden sich fixed und sticky?",
+    "answer": "fixed bleibt immer an derselben Position relativ zum Browserfenster; sticky verhält sich wie ein normales Element, „haftet“ aber, sobald es einen definierten Schwellenwert erreicht.",
     "category": "HTML & CSS",
     "difficulty": "medium"
   },
   {
     "id": 239,
-    "question": "Что такое flexbox и зачем он нужен?",
-    "answer": "Flexbox — это модель вёрстки для удобного расположения элементов по горизонтали и вертикали, создания адаптивных макетов.",
+    "question": "Was ist Flexbox und wozu dient es?",
+    "answer": "Flexbox ist ein Layout-Modell, das eine einfache horizontale und vertikale Anordnung von Elementen sowie die Erstellung responsiver Layouts ermöglicht.",
     "category": "HTML & CSS",
     "difficulty": "easy"
   },
   {
     "id": 240,
-    "question": "Что такое основная ось и вспомогательная ось в flexbox?",
-    "answer": "Основная ось — та, вдоль которой располагаются элементы. Вспомогательная ось — перпендикулярная. Задаются через flex-direction.",
+    "question": "Was sind die Haupt- und die Nebenachse im Flexbox-Modell?",
+    "answer": "Die Hauptachse ist die Richtung, in der die Elemente angeordnet sind. Die Nebenachse ist senkrecht dazu. Beide werden durch flex-direction festgelegt.",
     "category": "HTML & CSS",
     "difficulty": "medium"
   },
   {
     "id": 241,
-    "question": "Какие значения имеет свойство flex-direction?",
+    "question": "Welche Werte kann die Eigenschaft flex-direction haben?",
     "answer": "row, column, row-reverse, column-reverse.",
     "category": "HTML & CSS",
     "difficulty": "easy"
   },
   {
     "id": 242,
-    "question": "За что отвечают justify-content и align-items?",
-    "answer": "justify-content — выравнивание по основной оси, align-items — по вспомогательной оси.",
+    "question": "Wofür sind justify-content und align-items zuständig?",
+    "answer": "justify-content – Ausrichtung entlang der Hauptachse, align-items – entlang der Nebenachse.",
     "category": "HTML & CSS",
     "difficulty": "medium"
   },
   {
     "id": 243,
-    "question": "Что делает свойство flex-wrap?",
-    "answer": "Определяет перенос элементов: nowrap (по умолчанию) — всё в одну строку; wrap — перенос на новую строку/столбец.",
+    "question": "Was macht die Eigenschaft flex-wrap?",
+    "answer": "Sie legt fest, ob Elemente umbrochen werden: nowrap (Standard) – alles in einer Zeile; wrap – Umbruch auf eine neue Zeile oder Spalte.",
     "category": "HTML & CSS",
     "difficulty": "medium"
   },
   {
     "id": 244,
-    "question": "Как работает align-self?",
-    "answer": "Позволяет переопределить выравнивание конкретного элемента по вспомогательной оси.",
+    "question": "Wie funktioniert align-self?",
+    "answer": "Damit kann das Ausrichten eines bestimmten Elements entlang der Nebenachse individuell überschrieben werden.",
     "category": "HTML & CSS",
     "difficulty": "medium"
   },
   {
     "id": 245,
-    "question": "Что такое CSS Grid и зачем он нужен?",
-    "answer": "CSS Grid — это способ построения макета в виде сетки из строк и столбцов. Удобен для сложных двумерных макетов.",
+    "question": "Was ist CSS Grid und wozu dient es?",
+    "answer": "CSS Grid ist ein Layout-System, das Inhalte in einem Raster aus Zeilen und Spalten anordnet – ideal für komplexe zweidimensionale Layouts.",
     "category": "CSS Grid",
     "difficulty": "easy"
   },
   {
-    "id": 245,
-    "question": "Чем CSS Grid отличается от Flexbox?",
-    "answer": "Flexbox работает с одной осью, Grid — с двумя (строки и столбцы одновременно).",
+    "id": 246,
+    "question": "Worin unterscheidet sich CSS Grid von Flexbox?",
+    "answer": "Flexbox arbeitet mit einer Achse, Grid mit zwei – Zeilen und Spalten gleichzeitig.",
     "category": "CSS Grid",
     "difficulty": "medium"
   },
   {
     "id": 247,
-    "question": "Что такое grid container и grid item?",
-    "answer": "Grid container — элемент с display: grid. Grid items — его прямые потомки.",
+    "question": "Was sind Grid-Container und Grid-Items?",
+    "answer": "Ein Grid-Container ist ein Element mit display: grid; Grid-Items sind seine direkten Kindelemente.",
     "category": "CSS Grid",
     "difficulty": "easy"
   },
   {
     "id": 248,
-    "question": "Для чего используется grid-template-columns?",
-    "answer": "Задаёт количество и ширину столбцов в сетке.",
+    "question": "Wofür wird grid-template-columns verwendet?",
+    "answer": "Es legt die Anzahl und Breite der Spalten im Raster fest.",
     "category": "CSS Grid",
     "difficulty": "easy"
   },
   {
     "id": 249,
-    "question": "Что такое единица измерения fr?",
-    "answer": "fr — доля свободного пространства в контейнере. Например, 1fr 2fr — второй столбец в 2 раза шире первого.",
+    "question": "Was ist die Einheit fr?",
+    "answer": "fr steht für einen Anteil des verfügbaren Platzes im Container. Beispiel: 1fr 2fr – die zweite Spalte ist doppelt so breit wie die erste.",
     "category": "CSS Grid",
     "difficulty": "medium"
   },
   {
     "id": 250,
-    "question": "Как записать повторяющиеся значения в шаблоне?",
-    "answer": "С помощью repeat(). Например, grid-template-columns: repeat(4, 1fr).",
+    "question": "Wie schreibt man wiederholende Werte im Grid-Template?",
+    "answer": "Mit repeat(). Beispiel: grid-template-columns: repeat(4, 1fr).",
     "category": "CSS Grid",
     "difficulty": "easy"
   },
   {
     "id": 251,
-    "question": "Как добавить отступы между ячейками?",
-    "answer": "С помощью grid-gap (или row-gap и column-gap).",
+    "question": "Wie fügt man Abstände zwischen Zellen hinzu?",
+    "answer": "Mit grid-gap (oder row-gap und column-gap).",
     "category": "CSS Grid",
     "difficulty": "easy"
   },
   {
     "id": 252,
-    "question": "Для чего используется grid-template-rows?",
-    "answer": "Задаёт количество и высоту строк в сетке.",
+    "question": "Wofür wird grid-template-rows verwendet?",
+    "answer": "Es legt die Anzahl und Höhe der Zeilen im Raster fest.",
     "category": "CSS Grid",
     "difficulty": "easy"
   },
   {
     "id": 253,
-    "question": "Что делает grid-template-areas?",
-    "answer": "Позволяет описывать сетку именованными областями, а элементы размещать через grid-area.",
+    "question": "Was macht grid-template-areas?",
+    "answer": "Es erlaubt, Rasterbereiche mit Namen zu definieren und Elemente per grid-area dort zu platzieren.",
     "category": "CSS Grid",
     "difficulty": "medium"
   },
   {
     "id": 254,
-    "question": "Как выровнять содержимое ячеек по горизонтали и вертикали?",
-    "answer": "justify-items — по горизонтали, align-items — по вертикали.",
+    "question": "Wie richtet man den Inhalt der Zellen horizontal und vertikal aus?",
+    "answer": "justify-items – horizontal, align-items – vertikal.",
     "category": "CSS Grid",
     "difficulty": "easy"
   },
   {
     "id": 255,
-    "question": "Что делают grid-auto-rows и grid-auto-columns?",
-    "answer": "Задают размеры строк и столбцов, которые не определены явно.",
+    "question": "Was machen grid-auto-rows und grid-auto-columns?",
+    "answer": "Sie legen die Größe von Zeilen und Spalten fest, die nicht explizit definiert wurden.",
     "category": "CSS Grid",
     "difficulty": "medium"
   },
   {
     "id": 256,
-    "question": "Как управлять направлением, куда грид добавляет новые элементы?",
-    "answer": "Через grid-auto-flow: row (по строкам) или column (по столбцам).",
+    "question": "Wie steuert man die Richtung, in der neue Grid-Elemente hinzugefügt werden?",
+    "answer": "Mit grid-auto-flow: row (nach Zeilen) oder column (nach Spalten).",
     "category": "CSS Grid",
     "difficulty": "medium"
   },
   {
     "id": 257,
-    "question": "Для чего используются justify-self и align-self?",
-    "answer": "justify-self — выравнивание элемента по горизонтали, align-self — по вертикали.",
+    "question": "Wofür werden justify-self und align-self verwendet?",
+    "answer": "justify-self richtet das Element horizontal aus, align-self vertikal.",
     "category": "CSS Grid",
     "difficulty": "medium"
   },
   {
     "id": 258,
-    "question": "Что делают grid-row и grid-column?",
-    "answer": "Задают линии сетки, которые занимает элемент, например grid-column: 1 / 3.",
+    "question": "Was machen grid-row und grid-column?",
+    "answer": "Sie legen die Rasterlinien fest, die ein Element einnimmt, z. B. grid-column: 1 / 3.",
     "category": "CSS Grid",
     "difficulty": "medium"
   },
   {
     "id": 259,
-    "question": "Что значит «грид работает с линиями сетки»?",
-    "answer": "grid-column: 1 / 3 значит «от первой линии до третьей», то есть 2 столбца, а не 3.",
+    "question": "Was bedeutet „Grid arbeitet mit Rasterlinien“?",
+    "answer": "grid-column: 1 / 3 bedeutet „von Linie 1 bis 3“, also zwei Spalten, nicht drei.",
     "category": "CSS Grid",
     "difficulty": "medium"
   },
   {
     "id": 260,
-    "question": "Что такое адаптивная (responsive) вёрстка?",
-    "answer": "Это подход, при котором сайт подстраивается под размер экрана устройства, чтобы одинаково хорошо работать на смартфонах, планшетах, ноутбуках и десктопах.",
+    "question": "Was ist Responsive Design?",
+    "answer": "Ein Ansatz, bei dem sich die Website an die Bildschirmgröße anpasst, um auf Smartphones, Tablets, Laptops und Desktops gleich gut zu funktionieren.",
     "category": "CSS",
     "difficulty": "easy"
   },
   {
     "id": 261,
-    "question": "В чём разница между отдельной мобильной версией сайта и адаптивным дизайном?",
-    "answer": "Отдельная версия — это отдельный сайт (например, m.site.com) для мобильных. Адаптив — это один сайт, который перестраивает макет под разные размеры экранов.",
+    "question": "Was ist der Unterschied zwischen einer separaten mobilen Version und einem Responsive Design?",
+    "answer": "Eine separate Version ist eine eigene Seite (z. B. m.site.com) für mobile Geräte. Responsive Design ist eine einzige Seite, die ihr Layout an verschiedene Bildschirmgrößen anpasst.",
     "category": "CSS",
     "difficulty": "medium"
   },
   {
     "id": 262,
-    "question": "Что такое breakpoints (точки перелома)?",
-    "answer": "Это размеры экрана (ширина или высота), при которых макет «ломается» и переключается на другие стили (например, при 520px — 2 колонки, при 900px — 6 колонок).",
+    "question": "Was sind Breakpoints?",
+    "answer": "Das sind Bildschirmgrößen, bei denen das Layout „bricht“ und zu anderen Stilen wechselt (z. B. bei 520px – 2 Spalten, bei 900px – 6 Spalten).",
     "category": "CSS",
     "difficulty": "medium"
   },
   {
     "id": 263,
-    "question": "Что такое медиа-запросы и зачем они нужны?",
-    "answer": "Медиа-запросы позволяют применять разные CSS-стили при выполнении условий (например, max-width: 900px). Так мы управляем отображением макета на разных устройствах.",
+    "question": "Was sind Media Queries und wozu dienen sie?",
+    "answer": "Media Queries ermöglichen es, verschiedene CSS-Stile unter bestimmten Bedingungen anzuwenden (z. B. max-width: 900px), um Layouts an verschiedene Geräte anzupassen.",
     "category": "CSS",
     "difficulty": "easy"
   },
   {
     "id": 264,
-    "question": "Что такое min-width и max-width?",
-    "answer": "min-width — стили применяются, если ширина экрана не меньше указанного значения. max-width — стили применяются, если ширина экрана не больше указанного значения.",
+    "question": "Was ist der Unterschied zwischen min-width und max-width?",
+    "answer": "min-width – Stile werden angewendet, wenn die Breite mindestens dem angegebenen Wert entspricht. max-width – wenn die Breite kleiner oder gleich diesem Wert ist.",
     "category": "CSS",
     "difficulty": "easy"
   },
   {
     "id": 265,
-    "question": "Можно ли использовать медиазапросы для высоты и других параметров?",
-    "answer": "Да. Например: min-height, max-height, orientation: portrait/landscape и другие.",
+    "question": "Kann man Media Queries auch für Höhe und andere Parameter verwenden?",
+    "answer": "Ja. Zum Beispiel: min-height, max-height, orientation: portrait/landscape und mehr.",
     "category": "CSS",
     "difficulty": "medium"
   },
   {
     "id": 266,
-    "question": "Нужно ли переписывать все стили в медиа-запросе?",
-    "answer": "Нет. В медиа-запросе указываются только те свойства, которые нужно переопределить. Остальные берутся из базовых стилей.",
+    "question": "Muss man in einer Media Query alle Stile neu schreiben?",
+    "answer": "Nein. In Media Queries werden nur die Eigenschaften überschrieben, die geändert werden müssen – der Rest bleibt bestehen.",
     "category": "CSS",
     "difficulty": "easy"
   },
   {
     "id": 267,
-    "question": "В чём разница между mobile-first и desktop-first подходами?",
-    "answer": "Mobile-first: стили по умолчанию для мобильных, далее расширяем через min-width. Desktop-first: стили по умолчанию для десктопов, далее сужаем через max-width.",
+    "question": "Was ist der Unterschied zwischen Mobile-First und Desktop-First Ansatz?",
+    "answer": "Mobile-First: Standardstile für mobile Geräte, Erweiterung über min-width. Desktop-First: Standardstile für Desktop, Anpassung über max-width.",
     "category": "CSS",
     "difficulty": "medium"
   },
   {
     "id": 268,
-    "question": "Как работает порядок применения медиа-запросов?",
-    "answer": "CSS читается сверху вниз. Если несколько условий выполняются, более поздние стили перекрывают предыдущие.",
+    "question": "Wie funktioniert die Reihenfolge von Media Queries?",
+    "answer": "CSS wird von oben nach unten gelesen. Wenn mehrere Bedingungen erfüllt sind, überschreiben spätere Regeln die früheren.",
     "category": "CSS",
     "difficulty": "medium"
   },
   {
     "id": 269,
-    "question": "Что такое JavaScript и зачем он нужен?",
-    "answer": "Это язык программирования для браузеров, который добавляет динамику и интерактив на сайты: обработку кликов, ввод данных, изменение DOM и т.д.",
+    "question": "Was ist JavaScript und wozu dient es?",
+    "answer": "Eine Programmiersprache für Browser, die Webseiten Dynamik und Interaktivität verleiht: Klickverarbeitung, Dateneingabe, DOM-Manipulation usw.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 270,
-    "question": "Почему HTML и CSS не подходят для динамики?",
-    "answer": "HTML — язык разметки (структура). CSS — язык стилей (внешний вид). Они статичны и не могут полноценно реагировать на действия пользователя.",
+    "question": "Warum eignen sich HTML und CSS nicht für dynamische Inhalte?",
+    "answer": "HTML ist eine Markupsprache (Struktur), CSS eine Stylesprache (Aussehen). Beide sind statisch und reagieren nicht eigenständig auf Benutzeraktionen.",
     "category": "JavaScript",
     "difficulty": "easy"
-  },
+  }, 
   {
     "id": 271,
-    "question": "Где выполняется JavaScript?",
-    "answer": "JS — однопоточный язык, выполняется в браузере (поддержка встроена «из коробки»).",
+    "question": "Wo wird JavaScript ausgeführt?",
+    "answer": "JavaScript ist eine einsträngige Sprache, die im Browser ausgeführt wird (Unterstützung ist standardmäßig integriert).",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 272,
-    "question": "Как подключить JS к HTML?",
-    "answer": "Скрипты пишутся в файлах .js и подключаются тегом <script src=\"путь\"></script>. Обычно — перед </body>, чтобы DOM успел загрузиться. ./ — искать в текущей папке, ../ — подняться на уровень выше.",
+    "question": "Wie bindet man JavaScript in HTML ein?",
+    "answer": "Skripte werden in .js-Dateien geschrieben und mit dem Tag <script src=\"pfad\"></script> eingebunden. Meistens vor </body>, damit der DOM vorher geladen wird. ./ bedeutet: im aktuellen Ordner suchen, ../ – eine Ebene höher.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 273,
-    "question": "Что такое переменная?",
-    "answer": "Именованное хранилище данных в памяти, доступное по имени.",
+    "question": "Was ist eine Variable?",
+    "answer": "Ein benannter Speicherplatz für Daten im Arbeitsspeicher, auf den man über seinen Namen zugreifen kann.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 274,
-    "question": "Чем отличаются let, const и var?",
-    "answer": "let — переменная, можно менять значение. const — константа, нельзя переприсвоить. var — устаревший способ объявления, использовать не рекомендуется.",
+    "question": "Worin unterscheiden sich let, const und var?",
+    "answer": "let – Variable, deren Wert geändert werden kann. const – Konstante, nicht neu zuweisen. var – veraltete Deklaration, sollte nicht mehr verwendet werden.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 275,
-    "question": "Какие типы данных есть в JavaScript?",
-    "answer": "number, string, boolean, object, null, undefined, BigInt, symbol",
+    "question": "Welche Datentypen gibt es in JavaScript?",
+    "answer": "number, string, boolean, object, null, undefined, BigInt, symbol.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 276,
-    "question": "Как работает динамическая типизация в JS?",
-    "answer": "Тип переменной не фиксируется — в одну и ту же переменную можно записывать число, строку, логическое значение и т.д.",
+    "question": "Wie funktioniert die dynamische Typisierung in JavaScript?",
+    "answer": "Der Typ einer Variable ist nicht festgelegt – man kann der gleichen Variable Zahlen, Zeichenketten, Booleans usw. zuweisen.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 277,
-    "question": "Что такое шаблонные строки?",
-    "answer": "Строки в обратных кавычках (), которые позволяют встраивать выражения через ${}. Например: let name = \"Elena\"; console.log(`Hello, ${name}!`);",
+    "question": "Was sind Template Strings?",
+    "answer": "Zeichenketten in Backticks (), die Ausdrücke mit ${} einbetten können. Beispiel: let name = \"Elena\"; console.log(`Hello, ${name}!`);",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 278,
-    "question": "Какие условные конструкции есть в JS?",
-    "answer": "if, if...else, тернарный оператор: условие ? выражение1 : выражение2",
+    "question": "Welche bedingten Konstruktionen gibt es in JavaScript?",
+    "answer": "if, if...else, ternärer Operator: bedingung ? ausdruck1 : ausdruck2.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 279,
-    "question": "Что такое цикл?",
-    "answer": "Конструкция, которая повторяет блок кода, пока выполняется условие.",
+    "question": "Was ist eine Schleife?",
+    "answer": "Eine Konstruktion, die einen Codeblock wiederholt, solange eine Bedingung erfüllt ist.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 280,
-    "question": "Какие виды циклов есть в JS?",
-    "answer": "while (с предусловием), do...while (с постусловием), for (со счетчиком)",
+    "question": "Welche Arten von Schleifen gibt es in JavaScript?",
+    "answer": "while (mit Vorbedingung), do...while (mit Nachbedingung), for (mit Zähler).",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 281,
-    "question": "Для чего нужны break и continue?",
-    "answer": "break — прервать цикл досрочно. continue — пропустить текущую итерацию и перейти к следующей.",
+    "question": "Wofür werden break und continue verwendet?",
+    "answer": "break – beendet die Schleife vorzeitig. continue – überspringt die aktuelle Iteration und fährt mit der nächsten fort.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 282,
-    "question": "Зачем нужны функции в JavaScript?",
-    "answer": "Функции помогают избежать дублирования кода (DRY), позволяют объединять повторяющуюся логику в одном месте, упрощают поддержку, тестирование и документирование.",
+    "question": "Wozu dienen Funktionen in JavaScript?",
+    "answer": "Sie helfen, Codewiederholungen zu vermeiden (DRY), bündeln wiederkehrende Logik, erleichtern Wartung, Tests und Dokumentation.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 283,
-    "question": "Что такое объявление (declaration) функции?",
-    "answer": "Это способ создания именованного блока кода с ключевым словом function.",
+    "question": "Was ist eine Funktionsdeklaration (Function Declaration)?",
+    "answer": "Eine benannte Codeeinheit, die mit dem Schlüsselwort function erstellt wird.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 284,
-    "question": "Что такое аргументы (параметры) функции?",
-    "answer": "Это значения, которые передаются функции при вызове для использования внутри её тела.",
+    "question": "Was sind Funktionsargumente (Parameter)?",
+    "answer": "Werte, die einer Funktion bei ihrem Aufruf übergeben werden und innerhalb des Funktionskörpers verwendet werden.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 285,
-    "question": "Что произойдет, если аргумент функции не передан?",
-    "answer": "По умолчанию его значение будет undefined.",
+    "question": "Was passiert, wenn ein Funktionsargument nicht übergeben wird?",
+    "answer": "Sein Wert ist standardmäßig undefined.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 286,
-    "question": "Что такое возвращаемое значение функции?",
-    "answer": "Это результат, который функция возвращает с помощью ключевого слова return. Если return не указан, функция возвращает undefined.",
+    "question": "Was ist der Rückgabewert einer Funktion?",
+    "answer": "Das Ergebnis, das die Funktion mit return zurückgibt. Ohne return gibt sie undefined zurück.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 287,
-    "question": "Что такое локальные и глобальные переменные?",
-    "answer": "Локальные переменные объявленные внутри функции и доступны только в её теле. Глобальные объявлены вне функций и доступны везде.",
+    "question": "Was sind lokale und globale Variablen?",
+    "answer": "Lokale Variablen werden innerhalb einer Funktion deklariert und sind nur dort verfügbar. Globale Variablen sind außerhalb definiert und überall zugänglich.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 288,
-    "question": "Что такое function expression?",
-    "answer": "Это запись функции через присваивание переменной. Пример: const myFunction = function() { ... }; Функцию можно использовать только после объявления.",
+    "question": "Was ist eine Function Expression?",
+    "answer": "Eine Funktion, die einer Variablen zugewiesen wird. Beispiel: const myFunction = function() { ... }; Sie kann erst nach ihrer Deklaration verwendet werden.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 289,
-    "question": "В чем отличие function declaration и function expression?",
-    "answer": "Function declaration можно вызвать до объявления, function expression — только после. В основном это влияет на порядок использования функций в коде.",
+    "question": "Worin besteht der Unterschied zwischen Function Declaration und Function Expression?",
+    "answer": "Eine Function Declaration kann vor ihrer Definition aufgerufen werden, eine Function Expression erst danach.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 290,
-    "question": "Что такое колбэк (callback) функция?",
-    "answer": "Функция, которая передается в другую функцию как аргумент и вызывается внутри нее в нужный момент.",
+    "question": "Was ist eine Callback-Funktion?",
+    "answer": "Eine Funktion, die als Argument an eine andere Funktion übergeben wird und innerhalb dieser zu einem bestimmten Zeitpunkt aufgerufen wird.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 291,
-    "question": "Как правильно передавать колбеки в функцию?",
-    "answer": "Передавать только имя функции без круглых скобок.",
+    "question": "Wie übergibt man Callback-Funktionen richtig?",
+    "answer": "Nur den Funktionsnamen ohne Klammern übergeben.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 292,
-    "question": "Что такое стрелочные (arrow) функции?",
-    "answer": "Сокращенный синтаксис для записи функций. Пример однострочной: const sum = (a,b) => a + b; пример многострочной: const f = (a,b) => { return a+b; };",
+    "question": "Was sind Pfeilfunktionen (Arrow Functions)?",
+    "answer": "Kurzsyntax für Funktionen. Beispiel: const sum = (a,b) => a + b; oder mehrzeilig: const f = (a,b) => { return a + b; };",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 293,
-    "question": "Какие преимущества использования функций?",
-    "answer": "1) Логика в одном месте. 2) Нет дублирования кода. 3) Проще поддерживать, тестировать и документировать. 4) Возможность передавать функции как значения (колбэки).",
+    "question": "Welche Vorteile bieten Funktionen?",
+    "answer": "1) Logik an einem Ort. 2) Keine Codewiederholung. 3) Einfacher zu warten, zu testen und zu dokumentieren. 4) Funktionen können als Werte übergeben werden (Callbacks).",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 294,
-    "question": "Что такое объект в JavaScript?",
-    "answer": "Это набор пар «ключ-значение». Ключи уникальны внутри объекта, а значения могут быть любыми — примитивами, объектами, массивами, функциями.",
+    "question": "Was ist ein Objekt in JavaScript?",
+    "answer": "Eine Sammlung von Schlüssel-Wert-Paaren. Schlüssel sind eindeutig, Werte können beliebig sein – auch Objekte, Arrays oder Funktionen.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 295,
-    "question": "Как создать объект через литерал объекта?",
-    "answer": "const human = {}; // пустой объект. Можно сразу указать свойства: const human = {name: 'Vasya', age: 25};",
+    "question": "Wie erstellt man ein Objekt mit Objektliteral?",
+    "answer": "const human = {}; // leeres Objekt. Oder direkt mit Eigenschaften: const human = {name: 'Vasya', age: 25};",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 296,
-    "question": "Как добавлять свойства в объект?",
-    "answer": "Через точку: human.name = 'Vasya'; или через квадратные скобки: human['name'] = 'Vasya';",
+    "question": "Wie fügt man einem Objekt Eigenschaften hinzu?",
+    "answer": "Mit Punktnotation: human.name = 'Vasya'; oder mit eckigen Klammern: human['name'] = 'Vasya';",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 297,
-    "question": "Что такое квадратные скобки для доступа к свойствам объекта?",
-    "answer": "Позволяют использовать вычисляемое имя свойства, которое может быть известно только во время выполнения. Пример: hero[propToUpgrade] = 'Супер ' + hero[propToUpgrade];",
+    "question": "Wozu dienen eckige Klammern beim Zugriff auf Objekteigenschaften?",
+    "answer": "Sie erlauben, dynamische Schlüsselnamen zu verwenden, die erst zur Laufzeit bekannt sind. Beispiel: hero[propToUpgrade] = 'Super ' + hero[propToUpgrade];",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 298,
-    "question": "Что будет, если обратиться к несуществующему свойству объекта?",
-    "answer": "Ошибки не будет. Результатом будет undefined.",
+    "question": "Was passiert, wenn man auf eine nicht vorhandene Eigenschaft eines Objekts zugreift?",
+    "answer": "Es tritt kein Fehler auf – das Ergebnis ist undefined.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 299,
-    "question": "Как проверить наличие свойства в объекте?",
-    "answer": "Через оператор in: if ('name' in obj) { ... }. Или через условие: if(obj.name) { ... } — работает за счет truthy/falsy значений.",
+    "question": "Wie prüft man, ob eine Eigenschaft im Objekt vorhanden ist?",
+    "answer": "Mit dem Operator in: if ('name' in obj) { ... } oder über eine Bedingung: if (obj.name) { ... } – abhängig von truthy/falsy Werten.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 300,
-    "question": "Что такое массив в JavaScript?",
-    "answer": "Упорядоченная коллекция элементов. Элементы имеют индексы, начинающиеся с нуля. Массив можно создать: const arr = []; или const arr = ['a','b','c'];",
+    "question": "Was ist ein Array in JavaScript?",
+    "answer": "Eine geordnete Sammlung von Elementen mit Indizes, die bei null beginnen. Beispiel: const arr = []; oder const arr = ['a','b','c'];",
     "category": "JavaScript",
     "difficulty": "easy"
-  },
+  }, 
   {
     "id": 301,
-    "question": "Как получить доступ к элементу массива?",
-    "answer": "Через индекс: arr[0] — первый элемент, arr[1] — второй элемент и т.д.",
+    "question": "Wie greift man auf ein Array-Element zu?",
+    "answer": "Über den Index: arr[0] – erstes Element, arr[1] – zweites Element usw.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 302,
-    "question": "Что такое свойство length массива?",
-    "answer": "Длина массива. Показывает последнюю занятую позицию + 1. Массив может 'растягиваться', если задать элемент на индекс больше текущей длины.",
+    "question": "Was ist die Eigenschaft length eines Arrays?",
+    "answer": "Die Länge des Arrays. Sie zeigt die letzte belegte Position + 1. Das Array kann wachsen, wenn man einen Eintrag an einem Index größer als die aktuelle Länge setzt.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 303,
-    "question": "Какие методы добавления и удаления элементов из массива есть?",
-    "answer": "push — добавить в конец, pop — удалить с конца, unshift — добавить в начало, shift — удалить с начала.",
+    "question": "Welche Methoden gibt es zum Hinzufügen und Entfernen von Elementen in Arrays?",
+    "answer": "push – ans Ende hinzufügen, pop – vom Ende entfernen, unshift – am Anfang hinzufügen, shift – vom Anfang entfernen.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 304,
-    "question": "Что делает метод slice у массива?",
-    "answer": "Создает новый массив, содержащий срез исходного массива. Пример: arr.slice(2,5) — элементы с позиции 2 по 4 включительно.",
+    "question": "Was macht die Methode slice beim Array?",
+    "answer": "Sie erstellt ein neues Array mit einem Abschnitt des Originalarrays. Beispiel: arr.slice(2, 5) – Elemente an den Positionen 2 bis einschließlich 4.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 305,
-    "question": "Что делает метод splice у массива?",
-    "answer": "Позволяет удалять, заменять или вставлять элементы в массив. Синтаксис: splice(start, deleteCount, item1, item2...).",
+    "question": "Was macht die Methode splice beim Array?",
+    "answer": "Sie erlaubt das Löschen, Ersetzen oder Einfügen von Elementen. Syntax: splice(start, deleteCount, item1, item2...).",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 306,
-    "question": "Что делает метод sort?",
-    "answer": "Сортирует массив на месте, изменяя исходный массив. Может принимать колбэк для задания пользовательского порядка сортировки.",
+    "question": "Was macht die Methode sort?",
+    "answer": "Sie sortiert das Array in place und verändert es dabei. Optional mit Callback für eine benutzerdefinierte Sortierreihenfolge.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 307,
-    "question": "Какие аргументы принимает колбэк метода sort?",
-    "answer": "Два аргумента: elem1 и elem2 — два элемента массива, которые нужно сравнить для определения их порядка.",
+    "question": "Welche Argumente erhält der Callback von sort?",
+    "answer": "Zwei Argumente: elem1 und elem2 – die zu vergleichenden Array-Elemente.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 308,
-    "question": "Что должен возвращать колбэк метода sort?",
-    "answer": "Отрицательное значение, если elem1 должен быть перед elem2, 0 — если порядок не важен, положительное значение, если elem1 должен быть после elem2.",
+    "question": "Was soll der Callback von sort zurückgeben?",
+    "answer": "Einen negativen Wert, wenn elem1 vor elem2 stehen soll, 0 bei egal, und einen positiven Wert, wenn elem1 nach elem2 stehen soll.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 309,
-    "question": "Что делает метод reduce?",
-    "answer": "Проходит по массиву и вычисляет агрегированное значение. Возвращает одно значение, которое является результатом всех итераций.",
+    "question": "Was macht die Methode reduce?",
+    "answer": "Sie iteriert über das Array und berechnet einen aggregierten Wert. Sie gibt genau einen Wert als Ergebnis aller Iterationen zurück.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 310,
-    "question": "Какие аргументы принимает колбэк метода reduce?",
-    "answer": "Первый аргумент — аккумулятор (результат предыдущей итерации), второй аргумент — текущий элемент массива.",
+    "question": "Welche Argumente erhält der Callback von reduce?",
+    "answer": "Erstes Argument – der Akkumulator (Ergebnis der vorherigen Iteration), zweites Argument – das aktuelle Element.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 311,
-    "question": "Зачем указывать начальное значение аккумулятора в reduce?",
-    "answer": "Чтобы избежать ошибок на первой итерации и явно задать стартовое значение для аккумулятора. Рекомендуется всегда указывать начальное значение.",
+    "question": "Warum sollte man einen Startwert für den Akkumulator bei reduce angeben?",
+    "answer": "Um Fehler in der ersten Iteration zu vermeiden und einen klaren Startwert festzulegen. Es wird empfohlen, immer einen Startwert zu setzen.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 312,
-    "question": "Что произойдет, если колбэк reduce не возвращает значение?",
-    "answer": "На следующей итерации в качестве аккумулятора будет `undefined`, что приведет к некорректным результатам.",
+    "question": "Was passiert, wenn der reduce-Callback keinen Wert zurückgibt?",
+    "answer": "In der nächsten Iteration ist der Akkumulator undefined, was zu falschen Ergebnissen führt.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 313,
-    "question": "Чем reduce отличается от forEach?",
-    "answer": "forEach перебирает массив и выполняет действия для каждого элемента, но ничего не возвращает. reduce возвращает одно агрегированное значение и использует аккумулятор.",
+    "question": "Worin unterscheidet sich reduce von forEach?",
+    "answer": "forEach führt für jedes Element eine Aktion aus, gibt aber nichts zurück. reduce gibt einen einzelnen aggregierten Wert zurück und verwendet dazu einen Akkumulator.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 314,
-    "question": "Что делает метод some?",
-    "answer": "Проверяет, удовлетворяет ли хотя бы один элемент массива условию, заданному в колбэке. Возвращает true, если условие выполнено хотя бы для одного элемента, иначе false.",
+    "question": "Was macht die Methode some?",
+    "answer": "Sie prüft, ob mindestens ein Element die Bedingung im Callback erfüllt. Sie gibt true zurück, wenn das für mindestens ein Element zutrifft, sonst false.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 315,
-    "question": "Какие аргументы принимает колбэк метода some?",
-    "answer": "Первый аргумент — текущий элемент массива, второй — индекс элемента, третий — ссылка на сам массив.",
+    "question": "Welche Argumente erhält der Callback von some?",
+    "answer": "Erstes Argument – aktuelles Element, zweites – Index, drittes – Referenz auf das gesamte Array.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 316,
-    "question": "Что делает метод every?",
-    "answer": "Проверяет, удовлетворяют ли все элементы массива условию, заданному в колбэке. Возвращает true, если все элементы соответствуют условию, иначе false.",
+    "question": "Was macht die Methode every?",
+    "answer": "Sie prüft, ob alle Elemente die Bedingung im Callback erfüllen. Sie gibt true nur dann zurück, wenn die Bedingung für alle Elemente gilt.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 317,
-    "question": "Чем отличаются методы some и every?",
-    "answer": "some возвращает true, если условие выполняется хотя бы для одного элемента. every возвращает true только если условие выполняется для всех элементов.",
+    "question": "Worin unterscheiden sich some und every?",
+    "answer": "some gibt true zurück, wenn die Bedingung für mindestens ein Element gilt. every gibt true nur zurück, wenn sie für alle Elemente gilt.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 318,
-    "question": "Что делает метод find?",
-    "answer": "Ищет первый элемент массива, который удовлетворяет условию в колбэке, и возвращает его. Если таких элементов нет — возвращает undefined.",
+    "question": "Was macht die Methode find?",
+    "answer": "Sie sucht das erste Element, das die Bedingung im Callback erfüllt, und gibt es zurück. Wenn keines gefunden wird, ist das Ergebnis undefined.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 319,
-    "question": "Что делает метод findIndex?",
-    "answer": "Ищет первый элемент массива, который удовлетворяет условию в колбэке, и возвращает его индекс. Если такого элемента нет — возвращает -1.",
+    "question": "Was macht die Methode findIndex?",
+    "answer": "Sie sucht das erste Element, das die Bedingung im Callback erfüllt, und gibt dessen Index zurück. Wenn keines gefunden wird, ist das Ergebnis -1.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 320,
-    "question": "Какие аргументы принимает колбэк методов some, every, find, findIndex?",
-    "answer": "Первый аргумент — элемент массива, второй — индекс элемента, третий — ссылка на весь массив.",
+    "question": "Welche Argumente erhalten die Callbacks von some, every, find, findIndex?",
+    "answer": "Erstes Argument – Element, zweites – Index, drittes – Referenz auf das gesamte Array.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 321,
-    "question": "Что такое DOM?",
-    "answer": "DOM (Document Object Model) — объектная модель документа, где каждый элемент HTML представлен как JS-объект с набором свойств и методов.",
+    "question": "Was ist der DOM?",
+    "answer": "DOM (Document Object Model) – eine Objektmodell-Darstellung des Dokuments, bei der jedes HTML-Element als JS-Objekt mit Eigenschaften und Methoden vorliegt.",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
     "id": 322,
-    "question": "Как найти элемент по id?",
-    "answer": "С помощью метода document.getElementById('ID_элемента'). Возвращает первый найденный элемент с указанным id.",
+    "question": "Wie findet man ein Element per id?",
+    "answer": "Mit document.getElementById('ID_des_Elements'). Gibt das erste Element mit der angegebenen id zurück.",
     "category": "DOM",
     "difficulty": "easy"
   },
   {
     "id": 323,
-    "question": "Чем отличается querySelector от querySelectorAll?",
-    "answer": "querySelector возвращает первый элемент, соответствующий CSS-селектору. querySelectorAll возвращает NodeList со всеми соответствующими элементами.",
+    "question": "Worin unterscheiden sich querySelector und querySelectorAll?",
+    "answer": "querySelector gibt das erste Element zurück, das auf den CSS-Selektor passt. querySelectorAll gibt eine NodeList aller passenden Elemente zurück.",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
     "id": 324,
-    "question": "Как изменить текст DOM-элемента?",
-    "answer": "Свойство textContent позволяет изменить текст элемента: element.textContent = 'Новый текст'.",
+    "question": "Wie ändert man den Text eines DOM-Elements?",
+    "answer": "Über die Eigenschaft textContent: element.textContent = 'Neuer Text'.",
     "category": "DOM",
     "difficulty": "easy"
   },
   {
     "id": 325,
-    "question": "Как изменить стили DOM-элемента через JS?",
-    "answer": "Через объект style элемента: element.style.backgroundColor = 'red'; element.style.marginTop = '10px';",
+    "question": "Wie ändert man Styles eines DOM-Elements per JS?",
+    "answer": "Über das style-Objekt: element.style.backgroundColor = 'red'; element.style.marginTop = '10px';",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
     "id": 326,
-    "question": "Как добавить или удалить CSS-класс у элемента?",
-    "answer": "Используется classList: element.classList.add('className'), element.classList.remove('className'), element.classList.toggle('className').",
+    "question": "Wie fügt man einer DOM-Node eine CSS-Klasse hinzu oder entfernt sie?",
+    "answer": "Mit classList: element.classList.add('className'), element.classList.remove('className'), element.classList.toggle('className').",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
     "id": 327,
-    "question": "Как создать новый DOM-элемент?",
-    "answer": "document.createElement('tagName') создает элемент в памяти. Он еще не добавлен в разметку.",
+    "question": "Wie erstellt man ein neues DOM-Element?",
+    "answer": "document.createElement('tagName') erstellt das Element im Speicher. Es ist noch nicht im Dokument eingefügt.",
     "category": "DOM",
     "difficulty": "easy"
   },
   {
     "id": 328,
-    "question": "Какие методы позволяют добавить элемент на страницу?",
-    "answer": "append, prepend, before, after. Все методы вызываются у родительского элемента, куда нужно добавить новый элемент.",
+    "question": "Mit welchen Methoden fügt man ein Element in die Seite ein?",
+    "answer": "append, prepend, before, after. Diese Methoden werden am Elternelement aufgerufen, in das das neue Element eingefügt werden soll.",
     "category": "DOM",
     "difficulty": "medium"
   },
   {
     "id": 329,
-    "question": "Как добавить несколько обработчиков события?",
-    "answer": "Через addEventListener: element.addEventListener('click', callback); Можно добавлять сколько угодно обработчиков на одно событие.",
+    "question": "Wie fügt man mehrere Ereignis-Handler hinzu?",
+    "answer": "Mit addEventListener: element.addEventListener('click', callback); Man kann beliebig viele Handler für dasselbe Ereignis registrieren.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
     "id": 330,
-    "question": "Что такое объект Event в обработчике события?",
-    "answer": "Это объект, передаваемый браузером в обработчик, который содержит информацию о событии, например, event.target — элемент, на котором произошло событие.",
+    "question": "Was ist das Event-Objekt im Ereignishandler?",
+    "answer": "Ein vom Browser übergebenes Objekt mit Informationen zum Ereignis, z. B. event.target – das Element, auf dem das Ereignis ausgelöst wurde.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
     "id": 331,
-    "question": "Как получить текущее значение input при событии?",
-    "answer": "Через event.target.value в обработчике события.",
+    "question": "Wie erhält man den aktuellen Wert eines Input-Felds bei einem Ereignis?",
+    "answer": "Über event.target.value im Ereignishandler.",
     "category": "Events",
     "difficulty": "easy"
   },
   {
     "id": 332,
-    "question": "Что такое всплытие событий (bubbling) в JavaScript?",
-    "answer": "Когда событие происходит на целевом элементе, оно проходит вверх по DOM-иерархии и срабатывают обработчики на родительских элементах.",
+    "question": "Was ist Event-Bubbling (Ereignis-Bubbling) in JavaScript?",
+    "answer": "Wenn ein Ereignis am Zielelement auftritt, steigt es die DOM-Hierarchie nach oben und Handler auf Elternelementen werden ausgelöst.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
     "id": 333,
-    "question": "Что такое погружение событий (capturing)?",
-    "answer": "Фаза жизненного цикла события, когда событие идет сверху вниз по DOM-иерархии до целевого элемента.",
+    "question": "Was ist Event-Capturing (Ereignis-Capturing)?",
+    "answer": "Eine Phase im Lebenszyklus des Ereignisses, in der es von oben nach unten durch die DOM-Hierarchie bis zum Zielelement läuft.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
     "id": 334,
-    "question": "Что такое currentTarget и чем оно отличается от target?",
-    "answer": "currentTarget — это элемент, на котором в данный момент выполняется обработчик события. target — элемент, на котором произошло событие. Они могут различаться при всплытии.",
+    "question": "Was ist currentTarget und wie unterscheidet es sich von target?",
+    "answer": "currentTarget ist das Element, auf dem der Handler gerade ausgeführt wird. target ist das Element, auf dem das Ereignis ausgelöst wurde. Beim Bubbling können sie unterschiedlich sein.",
     "category": "Events",
     "difficulty": "medium"
   },
   {
     "id": 335,
-    "question": "Что такое поверхностная копия объекта или массива?",
-    "answer": "Это копия, где верхний уровень создается заново, но вложенные объекты или массивы остаются ссылками на оригинальные.",
+    "question": "Was ist eine flache Kopie (Shallow Copy) eines Objekts oder Arrays?",
+    "answer": "Eine Kopie, bei der die oberste Ebene neu erstellt wird, verschachtelte Objekte/Arrays jedoch Referenzen auf das Original bleiben.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 336,
-    "question": "Можно ли использовать spread-оператор для передачи элементов массива в функцию?",
-    "answer": "Да, spread-оператор позволяет передавать элементы массива как отдельные аргументы функции.",
+    "question": "Kann man den Spread-Operator verwenden, um Array-Elemente an eine Funktion zu übergeben?",
+    "answer": "Ja, der Spread-Operator übergibt die Elemente eines Arrays als einzelne Funktionsargumente.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 337,
-    "question": "Что такое rest-оператор в JavaScript?",
-    "answer": "Rest-оператор ... собирает оставшиеся аргументы функции в массив, позволяя работать с произвольным количеством аргументов.",
+    "question": "Was ist der Rest-Operator in JavaScript?",
+    "answer": "Der Rest-Operator ... sammelt die verbleibenden Funktionsargumente in ein Array und erlaubt so eine variable Argumentanzahl.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 338,
-    "question": "Где должен располагаться rest-оператор в аргументах функции?",
-    "answer": "Rest-оператор должен быть последним аргументом функции, чтобы собрать все остальные аргументы в массив.",
+    "question": "Wo muss der Rest-Operator in der Parameterliste stehen?",
+    "answer": "Er muss der letzte Parameter sein, um alle übrigen Argumente zu sammeln.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 339,
-    "question": "Можно ли использовать несколько rest-операторов в определении функции?",
-    "answer": "Нет, в определении функции может быть только один rest-оператор, и он должен быть в конце.",
+    "question": "Darf man mehrere Rest-Operatoren in einer Funktionsdefinition verwenden?",
+    "answer": "Nein, es darf nur einen Rest-Operator geben, und er muss am Ende stehen.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 340,
-    "question": "Что такое деструктуризация массивов?",
-    "answer": "Это синтаксис, позволяющий распаковать элементы массива в отдельные переменные по порядку.",
+    "question": "Was ist Array-Destrukturierung?",
+    "answer": "Ein Syntax, mit dem man Array-Elemente der Reihe nach in einzelne Variablen entpackt.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 341,
-    "question": "Как использовать rest-оператор при деструктуризации массивов?",
-    "answer": "Rest-оператор позволяет собрать оставшиеся элементы массива в отдельный массив после указанных переменных.",
+    "question": "Wie verwendet man den Rest-Operator bei der Array-Destrukturierung?",
+    "answer": "Er sammelt die verbleibenden Elemente nach den benannten Variablen in ein eigenes Array.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 342,
-    "question": "Что такое деструктуризация объектов?",
-    "answer": "Это синтаксис, позволяющий распаковать значения свойств объекта в отдельные переменные по имени ключей.",
+    "question": "Was ist Objekt-Destrukturierung?",
+    "answer": "Ein Syntax, mit dem man Werte von Objekteigenschaften anhand ihrer Schlüsselnamen in Variablen entpackt.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 343,
-    "question": "Важен ли порядок свойств при деструктуризации объектов?",
-    "answer": "Нет, порядок не имеет значения. Важны только имена свойств.",
+    "question": "Spielt die Reihenfolge der Eigenschaften bei der Objekt-Destrukturierung eine Rolle?",
+    "answer": "Nein, nur die Namen der Eigenschaften sind relevant, nicht ihre Reihenfolge.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 344,
-    "question": "Как задать значение по умолчанию при деструктуризации объекта?",
-    "answer": "Используется синтаксис свойство = значение, если свойства нет в объекте, переменной присваивается значение по умолчанию.",
+    "question": "Wie weist man Standardwerte bei der Objekt-Destrukturierung zu?",
+    "answer": "Mit syntax eigenschaft = standardwert; fehlt die Eigenschaft, erhält die Variable den Standardwert.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 345,
-    "question": "Что такое алиасы (псевдонимы) при деструктуризации объектов?",
-    "answer": "Алиасы позволяют записать значение свойства объекта в переменную с другим именем, используя синтаксис ключ: имя_переменной.",
+    "question": "Was sind Aliase bei der Objekt-Destrukturierung?",
+    "answer": "Damit kann man den Wert einer Eigenschaft in eine Variable mit anderem Namen schreiben: schlüssel: variablenName.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 346,
-    "question": "Зачем использовать localStorage на клиенте?",
-    "answer": "localStorage позволяет сохранять данные на стороне клиента, чтобы они сохранялись между перезагрузками страницы и даже закрытием браузера, например для хранения темы, языка или корзины.",
+    "question": "Warum verwendet man localStorage im Client?",
+    "answer": "localStorage speichert Daten im Browser persistent über Seiten-Reloads und sogar Browser-Schließen hinweg, z. B. für Theme, Sprache oder Warenkorb.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 347,
-    "question": "Чем localStorage отличается от cookies?",
-    "answer": "Данные в localStorage не отправляются на сервер при каждом запросе, а хранятся только в браузере; размер хранилища больше (до 5 МБ) и доступ к данным только через JS.",
+    "question": "Worin unterscheidet sich localStorage von Cookies?",
+    "answer": "localStorage-Daten werden nicht bei jeder Anfrage an den Server gesendet, liegen nur im Browser, haben meist mehr Speicher (bis ca. 5 MB) und sind nur per JS zugänglich.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 348,
-    "question": "Какие методы предоставляет localStorage для работы с данными?",
-    "answer": "Основные методы: setItem(key, value) — добавить или обновить, getItem(key) — получить значение, removeItem(key) — удалить элемент, clear() — очистить всё, key(index) — получить ключ по индексу, length — количество элементов.",
+    "question": "Welche Methoden bietet localStorage zur Datenverwaltung?",
+    "answer": "Hauptmethoden: setItem(key, value), getItem(key), removeItem(key), clear(), key(index); außerdem length für die Anzahl der Einträge.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 349,
-    "question": "Как добавить значение в localStorage?",
-    "answer": "Используется метод setItem с ключом и значением: localStorage.setItem('key', 'value').",
+    "question": "Wie fügt man einen Wert in localStorage ein?",
+    "answer": "Mit setItem unter Angabe von Schlüssel und Wert: localStorage.setItem('key', 'value').",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 350,
-    "question": "Как получить значение из localStorage?",
-    "answer": "Используется метод getItem с указанием ключа: localStorage.getItem('key'), возвращает строку или null, если ключа нет.",
+    "question": "Wie liest man einen Wert aus localStorage?",
+    "answer": "Mit getItem('key'); liefert eine Zeichenkette oder null, wenn der Schlüssel fehlt.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 351,
-    "question": "Как удалить конкретное значение из localStorage?",
-    "answer": "Используется метод removeItem с указанием ключа: localStorage.removeItem('key').",
+    "question": "Wie löscht man einen bestimmten Wert aus localStorage?",
+    "answer": "Mit removeItem('key').",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 352,
-    "question": "Как полностью очистить localStorage?",
-    "answer": "Используется метод clear(): localStorage.clear(), удаляет все данные из хранилища.",
+    "question": "Wie leert man den gesamten localStorage?",
+    "answer": "Mit clear(): localStorage.clear(), löscht alle Daten.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 353,
-    "question": "Можно ли управлять данными localStorage с сервера?",
-    "answer": "Нет, localStorage доступен только на стороне клиента через JavaScript и сервер не может напрямую управлять его содержимым.",
+    "question": "Kann der Server localStorage-Daten steuern?",
+    "answer": "Nein, localStorage ist nur clientseitig per JavaScript zugänglich; der Server hat keinen direkten Zugriff.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 354,
-    "question": "Что произойдет, если в localStorage записать не строку?",
-    "answer": "Не строковые данные будут неявно преобразованы в строку, что может вызвать нежелательные эффекты.",
+    "question": "Was passiert, wenn man Nicht-Strings in localStorage speichert?",
+    "answer": "Nicht-String-Werte werden implizit in Strings konvertiert, was unerwünschte Effekte haben kann.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 355,
-    "question": "Почему нельзя просто положить объект в localStorage?",
-    "answer": "LocalStorage умеет хранить только строки. Если попытаться положить объект напрямую, JS преобразует его в строку '[object Object]', что необратимо и не дает доступа к исходному объекту.",
+    "question": "Warum kann man ein Objekt nicht einfach direkt in localStorage legen?",
+    "answer": "localStorage speichert nur Strings. Ein Objekt würde zu \"[object Object]\" konvertiert – irreversibel und ohne Zugriff auf die ursprünglichen Daten.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 356,
-    "question": "Что такое JSON и зачем он нужен для localStorage?",
-    "answer": "JSON (JavaScript Object Notation) — это текстовый формат для хранения структурированных данных. Он позволяет преобразовать объекты и массивы в строку, которую можно сохранить в localStorage и потом восстановить обратно.",
+    "question": "Was ist JSON und warum ist es für localStorage nützlich?",
+    "answer": "JSON (JavaScript Object Notation) ist ein Textformat für strukturierte Daten. Damit lassen sich Objekte/Arrays in Strings umwandeln und später wiederherstellen.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 357,
-    "question": "Как преобразовать объект в строку для хранения в localStorage?",
-    "answer": "Используется метод JSON.stringify(jsObject), который сериализует объект или массив в строку формата JSON.",
+    "question": "Wie wandelt man ein Objekt in einen String zur Speicherung in localStorage um?",
+    "answer": "Mit JSON.stringify(jsObject), das Objekt oder Array in einen JSON-String serialisiert.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 358,
-    "question": "Как восстановить объект из localStorage?",
-    "answer": "Сначала получаем строку через getItem, затем используем JSON.parse(string), чтобы десериализовать строку обратно в объект или массив.",
+    "question": "Wie stellt man ein Objekt aus localStorage wieder her?",
+    "answer": "Zuerst den String mit getItem holen, dann mit JSON.parse(string) zurück in ein Objekt oder Array verwandeln.",
     "category": "JavaScript",
     "difficulty": "easy"
   },
   {
     "id": 359,
-    "question": "Что произойдет, если вызвать JSON.parse после JSON.stringify?",
-    "answer": "Мы получим новый объект, который содержит те же данные, что исходный, но никак не связан с оригиналом — это глубокая копия.",
+    "question": "Was passiert, wenn man nach JSON.stringify ein JSON.parse aufruft?",
+    "answer": "Man erhält ein neues Objekt mit denselben Daten wie das Original, aber ohne Referenzbezug – eine tiefe Kopie.",
     "category": "JavaScript",
     "difficulty": "medium"
   },
   {
     "id": 360,
-    "question": "Можно ли хранить массивы в localStorage?",
-    "answer": "Да, массивы можно сериализовать с помощью JSON.stringify и хранить как строку, а затем десериализовать с помощью JSON.parse.",
+    "question": "Kann man Arrays in localStorage speichern?",
+    "answer": "Ja, Arrays lassen sich mit JSON.stringify serialisieren und als String speichern, anschließend mit JSON.parse wiederherstellen.",
     "category": "JavaScript",
     "difficulty": "easy"
   }
 ]
+
